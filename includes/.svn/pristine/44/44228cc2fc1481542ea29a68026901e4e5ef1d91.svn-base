@@ -1,0 +1,109 @@
+
+#ifndef _WEDO_SHARED_PTR_H_
+#define _WEDO_SHARED_PTR_H_
+
+// MS compatible compilers support #pragma once
+#if defined(_MSC_VER)
+#    pragma once
+#endif
+
+#include "boost/shared_ptr.hpp"
+
+namespace wedo {
+	using boost::shared_ptr;
+/*
+#if __cplusplus > 201100L
+	using std::shared_ptr;
+#else
+template<typename _Ty>
+class shared_ptr
+{
+#if !defined(_MSC_VER) || (_MSC_VER >= 1400)
+	template<typename _Tf> friend class shared_ptr;
+#endif
+
+public:
+	shared_ptr() : pointer(0), counter(0) {}
+
+explicit
+	shared_ptr(_Ty* ptr) : pointer(0), counter(0) { 
+			if (ptr) { pointer = ptr; counter = new int(1); }
+	}
+
+	shared_ptr(const shared_ptr<_Ty>& ptr):
+		pointer(ptr.pointer), counter(ptr.counter) { Increase(); }
+
+#if !defined(_MSC_VER) || (_MSC_VER >= 1400)
+template<typename _Tother>
+	shared_ptr(const shared_ptr<_Tother> & ptr):
+		pointer(ptr.pointer), counter(ptr.counter) { Increase(); }
+#endif
+	~shared_ptr() { Decrease(); }
+
+// template<typename _Tother>
+// 	shared_ptr<_Tother> D_cast () const {
+// 	}
+
+	operator bool () const { return counter != 0; }
+
+#if !defined(_MSC_VER) || (_MSC_VER >= 1400)
+	_Ty* operator-> () const { return pointer; }
+#endif
+	_Ty& operator*  () const { return *pointer; }
+
+	// shared_ptr<_Ty>& operator= (_Ty* ptr) {
+	// 	Decrease();
+	// 	if (ptr) { pointer = ptr; counter = new int(1); }
+	// 	else     { pointer = 0;   counter = 0; }
+
+	// 	return *this;
+	// }
+	shared_ptr<_Ty>& operator= (const shared_ptr<_Ty>& ptr) {
+		if (this != &ptr) {
+			Decrease();
+			pointer = ptr.pointer;
+			counter = ptr.counter;
+			Increase();
+		}
+		return *this;
+	}
+#if !defined(_MSC_VER) || (_MSC_VER >= 1400)
+template<typename _Tother>
+	shared_ptr<_Ty>& operator= (const shared_ptr<_Tother>& ptr) {
+		Decrease();
+		pointer = ptr.pointer;
+		counter = ptr.counter;
+		Increase();
+		return *this;
+	}
+#endif
+
+	bool operator== (const shared_ptr<_Ty>& other) const {
+		return get() == other.get();
+	}
+	
+	bool operator!= (const shared_ptr<_Ty>& other) const {
+		return !(*this == other);
+	}
+
+	_Ty* get () const { return pointer; }
+	
+	long use_count () const { return (counter ? *counter : 0); }
+
+private:
+	inline void Increase () { if (counter) ++*counter; }
+	inline void Decrease () {
+		if (counter && -- *counter <= 0) {
+			delete counter; counter = 0;
+			delete pointer; pointer = 0;
+		}
+	}
+	_Ty* pointer;
+	int* counter;
+};
+
+#endif // __cplusplus > 201100L
+*/
+}; // namespace Wedo
+
+#endif // _WEDO_SHARED_PTR_H_

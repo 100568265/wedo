@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<telephonebook>
+    <person>
+        <name>xiaoming</name>
+        <addr addr1="hubei" addr2="wuhan" />
+        <email>1234567@qq.com</email>
+    </person>
+</telephonebook>

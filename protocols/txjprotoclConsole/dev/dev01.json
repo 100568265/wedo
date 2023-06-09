@@ -1,0 +1,15 @@
+{
+   "UUID" : "4a9a5ea8-c68c-4690-85b7-bd580f1b4254",
+   "data" : {
+      "tmChargeTime" : "10.54",
+      "tmClpClsTime" : "5.00",
+      "tmClpOpnPosi" : "391.20",
+      "tmClpOpnTime" : "2.13",
+      "tmShotCount" : "9266",
+      "tmTurnPosi" : "48.90",
+      "tmTurnPress" : "0",
+      "tmTurnTime" : "2.80"
+   },
+   "datetime" : "2019-05-06 12:14:48"
+}
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libcore" />
+		<Option pch_mode="2" />
+		<Option compiler="four_gnu_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../libs/libcore" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../build" />
+				<Option type="2" />
+				<Option compiler="cb4_of_gnu_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add directory="include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../../libs/libcore" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../build" />
+				<Option type="2" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O0" />
+					<Add option="-Wno-psabi" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fPIC" />
+		</Compiler>
+		<Unit filename="include/datatype.h" />
+		<Unit filename="include/datetime.h" />
+		<Unit filename="include/hashtable.h" />
+		<Unit filename="include/linkedlist.h" />
+		<Unit filename="include/sysgenlist.h" />
+		<Unit filename="include/sysinifile.h" />
+		<Unit filename="include/syslogger.h" />
+		<Unit filename="include/sysmalloc.h" />
+		<Unit filename="include/sysmutex.h" />
+		<Unit filename="include/sysqueue.h" />
+		<Unit filename="include/sysstring.h" />
+		<Unit filename="include/systhread.h" />
+		<Unit filename="src/datatype.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datetime.cpp" />
+		<Unit filename="src/hashtable.cpp" />
+		<Unit filename="src/sysinifile.cpp" />
+		<Unit filename="src/syslogger.cpp" />
+		<Unit filename="src/sysmalloc.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sysmutex.cpp" />
+		<Unit filename="src/sysstring.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/systhread.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

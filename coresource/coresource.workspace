@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="libcore/libcore.cbp" />
+		<Project filename="librtbase/librtbase.cbp" />
+		<Project filename="libxml/libxml.cbp" />
+		<Project filename="libvalidator/libvalidator.cbp" />
+		<Project filename="libwedo/libwedo.cbp" />
+		<Project filename="txjmain/txjmain.cbp" />
+		<Project filename="remoteService_V2/remoteService.cbp" />
+		<Project filename="libcmn/libcmn.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

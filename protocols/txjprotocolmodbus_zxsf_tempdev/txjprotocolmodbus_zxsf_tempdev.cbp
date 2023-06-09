@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="txjprotocolmodbus_zxsf_tempdev" />
+		<Option pch_mode="2" />
+		<Option compiler="linaro_arm_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../build/txj_linux/protocols/txjprotocolmodbus_zxsf_tempdev" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../build/txj_linux/protocols/txjprotocolmodbus_zxsf_tempdev" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="include/zxsf_tempdev.h" />
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zxsf_tempdev.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

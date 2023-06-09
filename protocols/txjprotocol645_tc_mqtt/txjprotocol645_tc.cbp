@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="txjprotocol645_tc" />
+		<Option pch_mode="2" />
+		<Option compiler="linaro_arm_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/txjprotocoldl645_2007_zhu_mqtt" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="nuvoton_gnu_gcc_compiler_for_arm" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Option projectLinkerOptionsRelation="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Option projectLibDirsRelation="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+					<Add directory="MQTT" />
+					<Add directory="MQTT/components/data-model" />
+					<Add directory="MQTT/portfiles/aiot_port" />
+					<Add directory="MQTT/external/mbedtls/include" />
+					<Add directory="MQTT/external/mbedtls/library" />
+					<Add directory="MQTT/external" />
+					<Add directory="MQTT/core" />
+					<Add directory="MQTT/core/utils" />
+					<Add directory="MQTT/core/sysdep" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libtxjprotocol645_tc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fPIC" />
+			<Add directory="include" />
+			<Add directory="../../includes" />
+		</Compiler>
+		<Unit filename="MQTT/components/data-model/aiot_dm_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/components/data-model/aiot_dm_api.h" />
+		<Unit filename="MQTT/components/data-model/dm_private.h" />
+		<Unit filename="MQTT/core/aiot_http_api.h" />
+		<Unit filename="MQTT/core/aiot_mqtt_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/aiot_mqtt_api.h" />
+		<Unit filename="MQTT/core/aiot_state_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/aiot_state_api.h" />
+		<Unit filename="MQTT/core/aiot_sysdep_api.h" />
+		<Unit filename="MQTT/core/sysdep/core_stdinc.h" />
+		<Unit filename="MQTT/core/sysdep/core_sysdep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/sysdep/core_sysdep.h" />
+		<Unit filename="MQTT/core/utils/core_auth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_auth.h" />
+		<Unit filename="MQTT/core/utils/core_diag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_diag.h" />
+		<Unit filename="MQTT/core/utils/core_global.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_global.h" />
+		<Unit filename="MQTT/core/utils/core_http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_http.h" />
+		<Unit filename="MQTT/core/utils/core_list.h" />
+		<Unit filename="MQTT/core/utils/core_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_log.h" />
+		<Unit filename="MQTT/core/utils/core_mqtt.h" />
+		<Unit filename="MQTT/core/utils/core_sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_sha256.h" />
+		<Unit filename="MQTT/core/utils/core_string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/core/utils/core_string.h" />
+		<Unit filename="MQTT/external/ali_ca_cert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/aes.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/asn1.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/base64.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/bignum.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/bn_mul.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/check_config.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/cipher.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/cipher_internal.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/config.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ctr_drbg.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/debug.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/des.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ecp.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/entropy.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/entropy_poll.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/error.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/md.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/md5.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/md_internal.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/net.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/net_sockets.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/oid.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/pem.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/pk.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/pk_internal.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/platform.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/rsa.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/sha1.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/sha256.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ssl.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ssl_ciphersuites.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ssl_cookie.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/ssl_internal.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/timing.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/x509.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/x509_crl.h" />
+		<Unit filename="MQTT/external/mbedtls/include/mbedtls/x509_crt.h" />
+		<Unit filename="MQTT/external/mbedtls/library/aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/asn1parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/base64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/bignum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/cipher.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/cipher_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/ctr_drbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/entropy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/entropy_poll.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/md.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/md_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/net_sockets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/oid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/pem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/pk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/pk_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/pkparse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/ssl_ciphersuites.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/ssl_cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/ssl_cookie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/ssl_tls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/timing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/x509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/external/mbedtls/library/x509_crt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MQTT/portfiles/aiot_port/posix_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/DL645.h" />
+		<Unit filename="include/cJSON.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/DL645.cpp" />
+		<Unit filename="src/cJSON.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

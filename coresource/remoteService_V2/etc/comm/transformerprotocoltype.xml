@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTransformerProtocolType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>db321f66-c7f2-455a-91ec-7f3d3bd78ea5</ID>
+        <No>0</No>
+        <Name>遥信</Name>
+        <StartPoint>1</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>5f827a83-910a-4300-aaca-d26bd451b333</ID>
+        <No>1</No>
+        <Name>遥测</Name>
+        <StartPoint>1793</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>744620c3-27d1-4566-ba6d-d188c6933524</ID>
+        <No>2</No>
+        <Name>参数</Name>
+        <StartPoint>2305</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>5c4231b9-9888-4000-9deb-375567c93a54</ID>
+        <No>3</No>
+        <Name>遥控\升降</Name>
+        <StartPoint>2817</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>9aea6b30-842e-4aa0-9fdb-b74d3ed08cd7</ID>
+        <No>4</No>
+        <Name>设定值</Name>
+        <StartPoint>2945</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>4e843c31-9ae5-4802-ab4a-cf2ba159fd16</ID>
+        <No>5</No>
+        <Name>电量</Name>
+        <StartPoint>3073</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>fa93a8b7-8930-4533-9d31-f897db7e5f4e</ID>
+        <No>6</No>
+        <Name>分接头信息</Name>
+        <StartPoint>3201</StartPoint>
+        <ProtocolTypeId>00502859-70f5-4c5d-9fcc-3b558433fee2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>00502859-70f5-4c5d-9fcc-3b558433fee2</ID>
+    <Name>IEC101_97</Name>
+    <Mark>IEC101从站端协议(97版)</Mark>
+    <sort>2</sort>
+    <TypeCount>7</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>a8d887f3-87aa-423c-bbb5-fa1011ca07ec</ID>
+        <No>0</No>
+        <Name>遥信</Name>
+        <StartPoint>1</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>15a7a01c-725d-4fc7-ada4-bfa2192557c0</ID>
+        <No>1</No>
+        <Name>遥测</Name>
+        <StartPoint>16385</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>ba2617d3-0daa-4a3c-a41f-71e277d324e2</ID>
+        <No>2</No>
+        <Name>参数</Name>
+        <StartPoint>20481</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>19a43d1c-ac19-48fa-89c8-781c9c392ee5</ID>
+        <No>3</No>
+        <Name>遥控\升降</Name>
+        <StartPoint>24577</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>60c09bb8-e8b0-40f0-a309-035c3dda7870</ID>
+        <No>4</No>
+        <Name>设定值</Name>
+        <StartPoint>25089</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>623155b7-73f1-4439-bbee-d0a30bdcc21e</ID>
+        <No>5</No>
+        <Name>电量</Name>
+        <StartPoint>25601</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>02341e41-7f6e-4046-82a4-185a2ed8d255</ID>
+        <No>6</No>
+        <Name>分接头信息</Name>
+        <StartPoint>26113</StartPoint>
+        <ProtocolTypeId>50aadb8d-c932-46e3-bb36-965f787bc849</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>50aadb8d-c932-46e3-bb36-965f787bc849</ID>
+    <Name>IEC104_02</Name>
+    <Mark>IEC104从站端协议(02版)</Mark>
+    <sort>3</sort>
+    <TypeCount>7</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>8ae3374f-192e-4af0-b679-ceb2d56d77e9</ID>
+        <No>0</No>
+        <Name>遥信</Name>
+        <StartPoint>1</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>5f95128e-0bf9-4ae7-ade9-ffcafa30a326</ID>
+        <No>1</No>
+        <Name>遥测</Name>
+        <StartPoint>16385</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>272db272-1cc7-4038-a1b1-3aea0e774021</ID>
+        <No>2</No>
+        <Name>参数</Name>
+        <StartPoint>20481</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>c2d1c272-abac-4526-a3a2-69b2dd621cb1</ID>
+        <No>3</No>
+        <Name>遥控\升降</Name>
+        <StartPoint>24577</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>fc88f9a5-633c-4208-ae97-f77885b5c1e7</ID>
+        <No>4</No>
+        <Name>设定值</Name>
+        <StartPoint>25089</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>81f3fb87-6bfa-402d-9af7-276cae5ab7b9</ID>
+        <No>5</No>
+        <Name>电量</Name>
+        <StartPoint>25601</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>0ca2665e-64e0-48f1-b609-8389a5192903</ID>
+        <No>6</No>
+        <Name>分接头信息</Name>
+        <StartPoint>26113</StartPoint>
+        <ProtocolTypeId>74ecc224-20f1-421a-9477-4fb90f5db3e6</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>74ecc224-20f1-421a-9477-4fb90f5db3e6</ID>
+    <Name>IEC101_02</Name>
+    <Mark>IEC101从站端协议(02版)</Mark>
+    <sort>1</sort>
+    <TypeCount>7</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types />
+    <ID>cc714cdd-04b5-4ea2-a67c-4838f7319342</ID>
+    <Name>内部协议</Name>
+    <Mark>通讯管理机内部协议</Mark>
+    <sort>6</sort>
+    <TypeCount>0</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types />
+    <ID>cef247a2-42b4-42dc-9745-5081d0fbf8b7</ID>
+    <Name>CDT</Name>
+    <Mark>CDT从站端协议</Mark>
+    <sort>7</sort>
+    <TypeCount>0</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>3917cebd-cd61-4afa-b854-90d614799072</ID>
+        <No>1</No>
+        <Name>读线圈状态</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>c871305d-0bd8-421a-821a-17d9b9a18c7f</ID>
+        <No>2</No>
+        <Name>读输入状态</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>e59c2b37-b52b-485e-af8e-52c666ba26ac</ID>
+        <No>3</No>
+        <Name>读输入寄存器</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>84a1fdfb-770a-4e0c-82cc-b23de27d392b</ID>
+        <No>4</No>
+        <Name>读保持寄存器</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>3d089eff-eaa1-4b7f-b557-a3bfed62827d</ID>
+        <No>5</No>
+        <Name>写线圈</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>ed661408-460d-4b47-a16c-8bb2448ef11d</ID>
+        <No>6</No>
+        <Name>写寄存器</Name>
+        <StartPoint>0</StartPoint>
+        <ProtocolTypeId>e264e808-ee46-4d3e-b630-24bdfac051d7</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>e264e808-ee46-4d3e-b630-24bdfac051d7</ID>
+    <Name>ModbusRTU</Name>
+    <Mark>Modbus/RTU从站协议</Mark>
+    <sort>5</sort>
+    <TypeCount>6</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>d805e144-90b5-47aa-9a1b-60fe504793dd</ID>
+        <No>0</No>
+        <Name>遥信</Name>
+        <StartPoint>1</StartPoint>
+        <ProtocolTypeId>eb3be3d6-fbb3-4b95-8ce5-0b65fac2780d</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>2a275d70-8df8-4890-9f1c-3b9a6cabc749</ID>
+        <No>1</No>
+        <Name>遥测</Name>
+        <StartPoint>10000</StartPoint>
+        <ProtocolTypeId>eb3be3d6-fbb3-4b95-8ce5-0b65fac2780d</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>eb3be3d6-fbb3-4b95-8ce5-0b65fac2780d</ID>
+    <Name>扩展协议</Name>
+    <Mark>扩展协议</Mark>
+    <sort>0</sort>
+    <TypeCount>2</TypeCount>
+  </TransformerProtocolType>
+  <TransformerProtocolType>
+    <types>
+      <VariableTransformerType>
+        <ID>c23ccbd3-026d-4109-abc9-977f62475efa</ID>
+        <No>0</No>
+        <Name>遥信</Name>
+        <StartPoint>1</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>90abbd2c-2767-4f6a-b873-7e1f6a8f43cc</ID>
+        <No>1</No>
+        <Name>遥测</Name>
+        <StartPoint>1793</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>0ad81b60-5342-47af-b861-120b30aba258</ID>
+        <No>2</No>
+        <Name>参数</Name>
+        <StartPoint>2305</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>67dabba6-9788-4b37-b486-9df81338fd2a</ID>
+        <No>3</No>
+        <Name>遥控\升降</Name>
+        <StartPoint>2817</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>f8b31d9e-3e08-4bae-b433-e6e859f3dfdc</ID>
+        <No>4</No>
+        <Name>设定值</Name>
+        <StartPoint>2945</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>3bc51bda-67bb-4f05-9027-2a8b7856250d</ID>
+        <No>5</No>
+        <Name>电量</Name>
+        <StartPoint>3073</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+      <VariableTransformerType>
+        <ID>439c3348-95b4-4d0b-9a08-354d20c6dbe4</ID>
+        <No>6</No>
+        <Name>分接头信息</Name>
+        <StartPoint>3201</StartPoint>
+        <ProtocolTypeId>f81e28fd-798f-4898-91f3-6d125840c0a2</ProtocolTypeId>
+        <m_variableTransFormerCount>0</m_variableTransFormerCount>
+        <transFormer />
+      </VariableTransformerType>
+    </types>
+    <ID>f81e28fd-798f-4898-91f3-6d125840c0a2</ID>
+    <Name>IEC104_97</Name>
+    <Mark>IEC104从站端协议(97版)</Mark>
+    <sort>4</sort>
+    <TypeCount>7</TypeCount>
+  </TransformerProtocolType>
+</ArrayOfTransformerProtocolType>

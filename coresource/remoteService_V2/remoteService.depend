@@ -1,0 +1,268 @@
+# depslib dependency file v1.0
+1601358400 source:/home/work/wedo/comm/coresource/remoteService/main.cpp
+	<iostream>
+	"tinyxml2.h"
+	"TcpClientPort.h"
+	<unistd.h>
+	"Manager.h"
+
+1470373816 /home/work/wedo/comm/coresource/remoteService/tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<stdint.h>
+	<android/log.h>
+	<assert.h>
+
+1595574736 /home/work/wedo/comm/coresource/remoteService/Port/TcpClientPort.h
+	<stdio.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"datatype.h"
+
+1470373816 source:/home/work/wedo/comm/coresource/remoteService/tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<stdarg.h>
+	<cstddef>
+	<cstdarg>
+
+1482599931 /home/work/wedo/comm/coresource/libcore/include/datatype.h
+	<stddef.h>
+	<WINNT.H>
+	<stdint.h>
+
+1595575699 source:/home/work/wedo/comm/coresource/remoteService/Port/TcpClientPort.cpp
+	"TcpClientPort.h"
+	<iostream>
+	<string.h>
+	<unistd.h>
+	<errno.h>
+
+1476008251 /home/work/wedo/comm/includes/tinyxml2.h
+	"../coresource/libxml/include/tinyxml2.h"
+
+1470373816 /home/work/wedo/comm/coresource/libxml/include/tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<stdint.h>
+	<android/log.h>
+	<assert.h>
+
+1602551692 /home/work/wedo/comm/coresource/remoteService/include/TcpClientPort.h
+	<stdio.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"datatype.h"
+	<string>
+
+1603789143 /home/work/wedo/comm/coresource/remoteService/include/Manager.h
+
+1596011884 source:/home/work/wedo/comm/coresource/remoteService/src/Manager.cpp
+	"Manager.h"
+	"tinyxml2.h"
+	<iostream>
+	"TcpClientPort.h"
+	"remoteProtocol.h"
+	<unistd.h>
+
+1603784098 /home/work/wedo/comm/coresource/remoteService/include/remoteProtocol.h
+	"datatype.h"
+	<string>
+	<string.h>
+
+1603791965 source:/home/work/wedo/comm/coresource/remoteService/src/remoteProtocol.cpp
+	"remoteProtocol.h"
+	"TcpClientPort.h"
+	<string.h>
+	<string>
+	<sstream>
+	<iconv.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/reboot.h>
+	<dirent.h>
+	<sys/stat.h>
+	<sysTools.h>
+
+1603249900 source:/home/work/wedo/comm/coresource/remoteService/src/TcpClientPort.cpp
+	"TcpClientPort.h"
+	<iostream>
+	<string.h>
+	<unistd.h>
+	<errno.h>
+	<fcntl.h>
+	<unistd.h>
+
+1470373816 source:/home/work/wedo/comm/coresource/remoteService/src/tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<stdarg.h>
+	<cstddef>
+	<cstdarg>
+
+1603264854 /home/work/wedo/comm/coresource/remoteService/include/sysTools.h
+	<string>
+	<string.h>
+	<sstream>
+	<iconv.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/reboot.h>
+	<dirent.h>
+	<sys/stat.h>
+	"datatype.h"
+
+1603791965 source:/home/work/wedo/comm/coresource/remoteService/src/sysTools.cpp
+	"sysTools.h"
+
+1607930954 source:/home/work/wedo/comm/coresource/remoteService_V2/main.cpp
+	<iostream>
+	"tinyxml2.h"
+	"TcpClientPort.h"
+	<unistd.h>
+	"Manager.h"
+
+1609315129 /home/work/wedo/comm/coresource/remoteService_V2/include/TcpClientPort.h
+	<stdio.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"datatype.h"
+	<string>
+	<netinet/tcp.h>
+	<sys/ioctl.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<errno.h>
+
+1607931017 /home/work/wedo/comm/coresource/remoteService_V2/include/Manager.h
+	<stdio.h>
+	<time.h>
+	"Thread.h"
+
+1609316559 source:/home/work/wedo/comm/coresource/remoteService_V2/src/Manager.cpp
+	"Manager.h"
+	"tinyxml2.h"
+	<iostream>
+	"TcpClientPort.h"
+	"remoteProtocol.h"
+	<unistd.h>
+	"syslogger.h"
+
+1607571817 /home/work/wedo/comm/coresource/remoteService_V2/include/remoteProtocol.h
+	"datatype.h"
+	<string>
+	<string.h>
+	<map>
+	"Thread.h"
+
+1608710992 source:/home/work/wedo/comm/coresource/remoteService_V2/src/remoteProtocol.cpp
+	"remoteProtocol.h"
+	"TcpClientPort.h"
+	<string.h>
+	<string>
+	<sstream>
+	<iconv.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/reboot.h>
+	<dirent.h>
+	<sys/stat.h>
+	<sysTools.h>
+	"syslogger.h"
+	"Manager.h"
+
+1608709466 /home/work/wedo/comm/coresource/remoteService_V2/include/sysTools.h
+	<string>
+	<string.h>
+	<sstream>
+	<iconv.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/reboot.h>
+	<dirent.h>
+	<sys/stat.h>
+	"datatype.h"
+	"syslogger.h"
+
+1608710481 source:/home/work/wedo/comm/coresource/remoteService_V2/src/sysTools.cpp
+	"sysTools.h"
+
+1609315678 source:/home/work/wedo/comm/coresource/remoteService_V2/src/TcpClientPort.cpp
+	"TcpClientPort.h"
+	<iostream>
+	<string.h>
+	<unistd.h>
+	<errno.h>
+	<fcntl.h>
+	<unistd.h>
+	"syslogger.h"
+
+1470373816 source:/home/work/wedo/comm/coresource/remoteService_V2/src/tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<stdarg.h>
+	<cstddef>
+	<cstdarg>
+
+1607482875 /home/work/wedo/comm/coresource/remoteService_V2/include/Thread.h
+	"datatype.h"
+	<windows.h>
+	<process.h>
+	<pthread.h>
+
+1607482875 source:/home/work/wedo/comm/coresource/remoteService_V2/src/Thread.cpp
+	"Thread.h"
+	<errno.h>
+	<time.h>
+
+1483854537 source:/home/work/wedo/comm/coresource/remoteService_V2/src/datetime.cpp
+	"datetime.h"
+
+1483854533 /home/work/wedo/comm/coresource/libcore/include/datetime.h
+	<time.h>
+
+1571037205 /home/work/wedo/comm/coresource/remoteService_V2/include/syslogger.h
+	<string>
+	<stdarg.h>
+	"datatype.h"
+
+1574752916 source:/home/work/wedo/comm/coresource/remoteService_V2/src/syslogger.cpp
+	"syslogger.h"
+	<unistd.h>
+	<stdio.h>
+	<stdarg.h>
+	"datetime.h"
+
+1571037205 /home/work/wedo/comm/coresource/libcore/include/syslogger.h
+	<string>
+	<stdarg.h>
+	"datatype.h"
+

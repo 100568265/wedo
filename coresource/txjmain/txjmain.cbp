@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="txjmain" />
+		<Option pch_mode="2" />
+		<Option compiler="linaro_arm_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../build/txj_linux/txjmain" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../build/txj_linux" />
+				<Option object_output="../../build/txj_linux" />
+				<Option type="1" />
+				<Option compiler="cb4_of_gnu_gcc_compiler" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Option projectLibDirsRelation="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+					<Add directory="../libwedo" />
+					<Add directory="ArduinoJson" />
+					<Add directory="../libcmn/include" />
+					<Add directory="../../../paho.mqtt.c-1.3.0/src" />
+					<Add directory="../libcmn/include/LGMQTT" />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,-rpath=." />
+					<Add option="-lpthread" />
+					<Add option="-L../../build/txj_linux" />
+					<Add option="-lcmn" />
+					<Add library="../../libs/libcore.a" />
+					<Add library="../../libs/librtbase.a" />
+					<Add library="../../libs/libvalidator.a" />
+					<Add library="../../libs/libxml.a" />
+					<Add library="../libwedo/libwedo.a" />
+					<Add library="/usr/lib32/libpaho-mqtt3c.so" />
+					<Add library="/usr/lib32/libpaho-mqtt3a.so" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../../build/txj_linux/txjmain" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../build/txj_linux" />
+				<Option object_output="../../build/txj_linux" />
+				<Option type="1" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-Wno-psabi" />
+					<Add option="-fPIC" />
+					<Add option="-pthread" />
+					<Add option="-DTIXML_USE_STL" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+				</Compiler>
+				<Linker>
+					<Add option="-lrt" />
+					<Add option="-lpthread" />
+					<Add library="./libcmn.so" />
+					<Add library="../../libs/libcore.a" />
+					<Add library="../../libs/librtbase.a" />
+					<Add library="../../libs/libxml.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="../../libs/librtbase.a" />
+		</Linker>
+		<Unit filename="include/CommManager.h" />
+		<Unit filename="include/SaveObject.h" />
+		<Unit filename="include/VariableStorage.h" />
+		<Unit filename="include/mongoose.h" />
+		<Unit filename="include/watchdog.h" />
+		<Unit filename="include/watchdoghelper.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/CommManager.cpp" />
+		<Unit filename="src/RtValueTransfer.cpp" />
+		<Unit filename="src/VariableStorage.cpp" />
+		<Unit filename="src/mongoose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/watchdog.cpp" />
+		<Unit filename="src/watchdoghelper.cpp" />
+		<Unit filename="src/websocket.cpp" />
+		<Extensions>
+			<debugger>
+				<remote_debugging target="Debug">
+					<options conn_type="0" serial_baud="115200" ip_address="192.168.124.178" ip_port="10000" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

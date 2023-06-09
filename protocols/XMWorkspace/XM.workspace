@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="XMWorkspace">
+		<Project filename="../txjprotocolXMLighting/txjprotocolXMLighting.cbp" />
+		<Project filename="../txjprotocolXMThreePhase/txjprotocolXMThreePhase.cbp" />
+		<Project filename="../txjprotocolXMTwoSpeedWind/txjprotocolXMTwoSpeedWind.cbp" />
+		<Project filename="../txjprotocolXMSingleAir/txjprotocolXMSingleAir.cbp" />
+		<Project filename="../txjprotocolXMWaterPump_wind/txjprotocolXMWaterPump_wind.cbp" />
+		<Project filename="../txjprotocolTimeControl/txjprotocolTimeControl.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

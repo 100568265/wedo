@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/CModbusRTU.h" open="0" top="0" tabpos="2">
+		<Cursor position="192" topLine="0" />
+	</File>
+	<File name="src/CModbusRTU.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="37239" topLine="1292" />
+	</File>
+</CodeBlocks_layout_file>

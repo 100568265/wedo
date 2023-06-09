@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1524823268 source:/home/work/wedo/comm/protocols/txjprotodlt645_sqb/main.cpp
+
+1524823091 source:/home/work/wedo/comm/protocols/txjprotodlt645_sqb/src/dlt645_sqb.cpp
+	"dlt645_sqb.h"
+	"Device.h"
+	"Channel.h"
+
+1479830438 /home/work/wedo/comm/protocols/txjprotodlt645_sqb/include/dlt645_sqb.h
+	"Protocol.h"
+
+1475986003 /home/work/wedo/comm/includes/Protocol.h
+	"../coresource/libcmn/include/Protocol.h"
+
+1475986003 /home/work/wedo/comm/includes/Device.h
+	"../coresource/libcmn/include/Device.h"
+
+1475986003 /home/work/wedo/comm/includes/Channel.h
+	"../coresource/libcmn/include/Channel.h"
+

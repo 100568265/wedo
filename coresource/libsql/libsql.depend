@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1423678359 source:/home/chenxj/txjcode/trunk/coresource/libsql/dbmysql.cpp
+	"dbmysql.h"
+
+1423664250 /home/chenxj/txjcode/trunk/coresource/libsql/dbmysql.h
+	"mysql.h"
+	<iostream>
+	<vector>
+	<string>
+	<string.h>
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/mysql.h
+	<sys/types.h>
+	<winsock.h>
+	"mysql_com.h"
+	"mysql_time.h"
+	"mysql_version.h"
+	"typelib.h"
+	"my_list.h"
+	"my_alloc.h"
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/mysql_com.h
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/mysql_time.h
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/mysql_version.h
+	<custom_conf.h>
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/typelib.h
+
+1418835602 /home/chenxj/txjcode/trunk/includes/mysqlinclude/my_list.h
+
+1418835601 /home/chenxj/txjcode/trunk/includes/mysqlinclude/my_alloc.h
+
+1423678359 source:d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\dbmysql.cpp
+	"dbmysql.h"
+
+1462459116 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\dbmysql.h
+	<winsock2.h>
+	"mysql.h"
+	<iostream>
+	<vector>
+	<string>
+	<string.h>
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\mysql.h
+	<sys/types.h>
+	<winsock.h>
+	"mysql_com.h"
+	"mysql_time.h"
+	"mysql_version.h"
+	"typelib.h"
+	"my_list.h"
+	"my_alloc.h"
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\mysql_com.h
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\mysql_time.h
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\mysql_version.h
+	<custom_conf.h>
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\typelib.h
+
+1418835602 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\my_list.h
+
+1418835601 d:\mywedo\protocolscode\commanagersourcecode\low_end\coresource\libsql\include\my_alloc.h
+

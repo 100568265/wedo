@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1597995941 source:/home/work/wedo/comm/protocols/txjprotocoldl645_2007_zhu_qs/main.c
+
+1598578401 source:/home/work/wedo/comm/protocols/txjprotocoldl645_2007_zhu_qs/src/DL645.cpp
+	"DL645.h"
+	"Device.h"
+

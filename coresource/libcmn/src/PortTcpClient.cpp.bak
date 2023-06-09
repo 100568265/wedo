@@ -1,0 +1,170 @@
+//#include "stdafx.h"
+#include "PortTcpClient.h"
+#include "Channel.h"
+#include "sysmutex.h"
+
+PortTcpClient::PortTcpClient(Channel *channel, PortInfo *portInfo):
+PortBase(channel, portInfo),
+client_socket_fd(-1)
+{
+}
+
+PortTcpClient::~PortTcpClient()
+{
+	Stop();
+    Uninit();
+}
+
+ST_VOID PortTcpClient::Init()
+{
+    if(m_Inited) return ;
+    Memset(&m_Server_addr, 0, sizeof(m_Server_addr));
+    m_Server_addr.sin_family = AF_INET;
+    m_Server_addr.sin_port   = htons(m_pPortInfo->RemotePort);
+    m_Server_addr.sin_addr.s_addr = inet_addr(m_pPortInfo->RemoteAddress);
+    m_Inited = true;
+}
+
+ST_VOID PortTcpClient::Uninit()
+{
+    if(!m_Inited) return ;
+    this->Close();
+    m_Inited = false;
+}
+
+ST_VOID PortTcpClient::Open()
+{
+	if(m_IsOpened) return;
+    Locker locker(&(this->m_Mutex));
+    
+	if(-1 != client_socket_fd) {
+#ifdef _WIN32
+		closesocket(client_socket_fd);
+#else
+		close(client_socket_fd);
+#endif
+	}
+	if((client_socket_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1)
+		return;// goto exit;
+    SetLinger   (client_socket_fd, 0, 0);
+    SetKeepalive(client_socket_fd, 1, 15, 5, 3);
+
+    if(connect(client_socket_fd, (struct sockaddr*)&m_Server_addr, sizeof(struct sockaddr_in)) == 0)
+    {
+        m_IsOpened = true;
+        // m_Mutex.Notify();
+		m_pChannel->GetCEngine()->OnConnect(client_socket_fd, client_socket_fd);
+        m_pLogger->LogDebug("tcpclient connected to %s.", m_pPortInfo->RemoteAddress);
+    }
+/*    else {
+		#ifndef _WIN32
+        m_pLogger->LogDebug("tcpclient connect error:errno=%d,descript=%s.",errno,strerror(errno));
+		#endif
+    }
+exit:
+	m_Mutex.UnLock();*/
+}
+
+ST_VOID PortTcpClient::Close()
+{
+	if(-1 != client_socket_fd) {
+#ifdef _WIN32
+		closesocket(client_socket_fd);
+#else
+		close(client_socket_fd);
+#endif
+        client_socket_fd = -1;
+	}
+    m_IsOpened = false;
+    m_pLogger->LogDebug("tcpclient close connect.");
+	m_pChannel->GetCEngine()->OnDisconnect(client_socket_fd, client_socket_fd);
+}
+
+ST_BOOLEAN PortTcpClient::Send(ST_UINT64 portAddr, ST_BYTE *buf, ST_UINT size)
+{
+    ST_INT nLeft = size, sendLen = 0;
+    if(IsOpened()) {
+        while(nLeft > 0) {
+#ifdef _WIN32
+			sendLen = send(client_socket_fd, (char*)buf, nLeft, 0);
+#else
+            sendLen = send(client_socket_fd, buf, nLeft, 0);
+#endif
+            if(sendLen > 0) {
+                buf   += sendLen;
+                nLeft -= sendLen;
+            }
+#ifdef _WIN32
+			else if(sendLen < 0 && (WSAGetLastError() == WSAEWOULDBLOCK || WSAGetLastError() == WSAEINTR ))
+            {
+				Thread::SLEEP(100);
+				continue;
+			}
+#else
+            else if(sendLen < 0 && (errno == EAGAIN || errno == EINTR) ) {
+                Thread::SLEEP(100);
+                continue;
+            }
+#endif
+            else {
+				#ifndef _WIN32
+                m_pLogger->LogDebug("tcpclient send error, errno: %d, desc: %s", errno, strerror(errno));
+				#endif
+                this->Close();
+                return false;
+            }
+        }
+        return true;
+    }
+    else {
+        m_pLogger->LogDebug("tcpclient send error, port not opened.");
+        return false;
+    }
+}
+
+ST_VOID PortTcpClient::Recv()
+{
+    if (!IsOpened()) {
+        Thread::SLEEP (20);
+        return;
+    }
+/*    while(!IsOpened()) {
+        m_Mutex.Wait(-1);
+    }*/
+    FD_ZERO (&m_ReadSet);
+    FD_SET  (client_socket_fd, &m_ReadSet);
+    if(select(client_socket_fd + 1, &m_ReadSet, NULL, NULL, NULL) > 0) {
+        if(FD_ISSET(client_socket_fd, &m_ReadSet)) {
+#ifdef _WIN32
+			ST_INT readLen = recv(client_socket_fd, (char*)m_PortBuf, 1024, 0);
+#else
+            ST_INT readLen = recv(client_socket_fd, m_PortBuf, 1024, 0);
+#endif
+            if(readLen > 0) {
+                m_portTask.Write(m_PortBuf, readLen);
+                m_portTask.PortDstAddr = 0; //inet_addr(m_pPortInfo->RemoteAddress);
+                m_portTask.LocalChannelID = m_pChannel->GetLocalChannelID();
+                m_pChannel->GetCEngine()->ReadTask(&m_portTask);
+                return;
+            }
+#ifdef _WIN32
+			else if(readLen < 0 && (WSAGetLastError() == WSAEWOULDBLOCK || WSAGetLastError() == WSAEINTR))
+            {
+				return;
+            }
+#else
+            else if(readLen < 0 && (EAGAIN == errno || EINTR == errno)) {
+                return;
+            }
+#endif
+            else {
+				#ifndef _WIN32
+                m_pLogger->LogDebug("tcpclient recv error: %d,desc: %s", errno, strerror(errno));
+				#endif
+            }
+        }
+        else return;
+    }
+    this->Close();
+}
+

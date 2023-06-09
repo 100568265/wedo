@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1671677527 source:/home/zengrong/wedo/protocols/cantool/CAN123/send.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<net/if.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<linux/can.h>
+	<linux/can/raw.h>
+

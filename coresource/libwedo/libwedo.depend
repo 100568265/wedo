@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1650865925 source:/home/zengrong/wedo/coresource/libwedo/main.cpp
+
+1669702153 source:/home/zengrong/wedo/coresource/libwedo/src/net/socket.cpp
+	"../../wedo/net/socket.h"
+	<unistd.h>
+	<sys/socket.h>
+	<fcntl.h>
+
+1650865925 /home/zengrong/wedo/coresource/libwedo/wedo/net/socket.h
+	<winsock2.h>
+
+1669702248 source:/home/zengrong/wedo/coresource/libwedo/src/thread/mutex.cpp
+	"../../wedo/thread/mutex.h"
+
+1650865925 /home/zengrong/wedo/coresource/libwedo/wedo/thread/mutex.h
+	<windows.h>
+	<pthread.h>
+

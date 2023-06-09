@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="txjprotocolgx2800a_ver97" />
+		<Option pch_mode="2" />
+		<Option compiler="linaro_arm_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../build/txj_linux/protocols/txjprotocolgx2800a_ver97" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-fPIC" />
+					<Add directory="include" />
+					<Add directory="../../includes" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../build/txj_linux/protocols/txjprotocolgx2800a_ver97" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="linaro_arm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add directory="include" />
+					<Add directory="../../includes" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gx2800a_ver97.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

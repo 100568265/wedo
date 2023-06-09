@@ -1,0 +1,6972 @@
+cscope 15 $HOME/wedo/protocols/txjprotocolmodbusrtu_zhu_ZGDZ_06               0000038697
+	@/home/zengrong/wedo/protocols/txjprotocolmodbusrtu_zhu_ZGDZ_06/include/CModbusRTU.h
+
+1 #iâdeà
+CMODBUSRTU_H
+
+
+2 
+	#CMODBUSRTU_H
+
+
+	)
+
+4 
+	~"PrÙocÞ.h
+"
+
+5 
+	~"D©aCache.h
+"
+
+6 
+	~"Deviû.h
+"
+
+7 
+	~"Deviûs.h
+"
+
+8 
+	~"sysšifže.h
+"
+
+11 #ifdeà
+PROTOCOL_EXPORTS
+
+
+12 
+	#PROTOCOL_API
+ 
+	`__deþ¥ec
+(
+dÎexpÜt
+)
+
+	)
+
+14 
+	#PROTOCOL_API
+ 
+	`__deþ¥ec
+(
+dÎimpÜt
+)
+
+	)
+
+17 #ifdeà
+__ýlu¥lus
+
+
+21 
+usšg
+ 
+Çme¥aû
+ 
+¡d
+;
+
+23 þas 
+	cCModbusRTU
+ : 
+public
+ 
+PrÙocÞ
+
+
+25 
+public
+:
+
+26 
+CModbusRTU
+();
+
+27 
+vœtu®
+ ~
+CModbusRTU
+();
+
+28 
+In™
+();
+
+29 
+Unš™
+();
+
+30 
+OnR—d
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+& 
+»aded
+);
+
+31 
+ST_BOOLEAN
+ 
+OnS’d
+();
+
+32 
+ST_BOOLEAN
+ 
+OnProûss
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+ 
+Ën
+);
+
+33 
+ST_BOOLEAN
+ 
+IsSuµÜtEngše
+(
+ST_INT
+ 
+’gšeTy³
+);
+
+34 
+´Ùeùed
+:
+
+35 
+´iv©e
+:
+
+36 
+S’dR—dCmd
+(
+ST_BYTE
+ 
+code
+, 
+ST_UINT
+ 
+»adAddr
+,ST_UINT 
+couÁ
+);
+
+37 
+S’dWr™eCmd
+(
+ST_UCHAR
+* 
+pD©a
+,
+ST_UINT
+ 
+d©aL’
+,ST_UINT 
+addr
+);
+
+38 
+S’dSšgËWr™eCmd
+(
+ST_INT
+ 
+d©a
+,ST_INT 
+»adAddr
+,ST_INT 
+nTy³
+);
+
+39 
+S’dYK
+(
+ST_UINT
+ 
+wr™eAddr
+,
+ST_INT
+ 
+d©a
+);
+
+40 
+S’dP»YK
+(
+ST_UINT
+ 
+wr™eAddr
+,
+ST_BOOLEAN
+ 
+bIsOn
+);
+
+41 
+S’dYT
+(
+ST_UINT
+ 
+wr™eAddr
+,ST_UINT 
+wIndex
+,
+ST_BOOLEAN
+ 
+bIsOn
+);
+
+42 
+ProûssMemÜy
+(
+ST_BYTE
+* 
+buf
+,ST_BYTE 
+couÁ
+);
+
+60 
+ProûssMemÜySBy‹
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+61 
+ProûssMemÜyIÁ16
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+62 
+ProûssMemÜyIÁ32
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+63 
+ProûssMemÜyBy‹
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+64 
+ProûssMemÜyUIÁ16
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+65 
+ProûssMemÜyUIÁ32
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+66 
+ProûssMemÜySšgË
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+67 
+ProûssMemÜyBoÞ—n
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+68 
+ProûssMemÜySŒšg
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+69 
+ProûssMemÜyBy‹s
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+70 
+ProûssMemÜyDoubË
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+71 
+ProûssMemÜyDecim®
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+72 
+ProûssMemÜyD©eTime
+(
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+73 
+ProûssMemÜyIÁ64
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+74 
+ProûssMemÜyUIÁ64
+ (
+ST_BYTE
+*, cÚ¡ 
+ST_D©aA»aI‹m
+&);
+
+76 
+FžlWORD
+(
+ST_BYTE
+* 
+buf
+,
+ST_UINT
+ 
+v
+);
+
+78 
+ST_UINT32
+ 
+htÚl1
+(ST_UINT32 
+dv
+);
+
+79 
+ST_UINT
+ 
+G‘AµWORDV®ue
+(ST_UINT 
+v
+,
+ST_INT
+ 
+cod‘y³
+);
+
+81 
+S’dWr™eCmd
+(
+ST_UCHAR
+* 
+pD©a
+,
+ST_UINT
+ 
+d©aL’
+);
+
+82 
+S’dWr™eCmdHex
+(
+ST_UCHAR
+* 
+pD©a
+,
+ST_UINT
+ 
+d©aL’
+);
+
+84 
+ST_BOOLEAN
+ 
+m_bTask
+;
+
+85 
+PrÙocÞTask
+ 
+m_curTask
+;
+
+86 
+ST_INT
+ 
+m_cu¼—dIndex
+;
+
+87 
+ST_INT
+ 
+m_»adIndex
+;
+
+90 #ifdeà
+_WIN32
+
+
+91 
+PROTOCOL_API
+ 
+CModbusRTU
+* 
+C»©eIn¡aû
+();
+
+93 
+CModbusRTU
+* 
+C»©eIn¡aû
+();
+
+96 #ifdeà
+__ýlu¥lus
+
+
+	@/home/zengrong/wedo/protocols/txjprotocolmodbusrtu_zhu_ZGDZ_06/src/CModbusRTU.cpp
+
+1 
+	~"CModbusRTU.h
+"
+
+2 
+	~"sy¦ogg”.h
+"
+
+3 
+	~"Debug.h
+"
+
+4 
+	~"ChªÃl.h
+"
+
+6 
+	#sDebug
+ ià(
+Œue
+è
+	`wedoDebug
+ (
+SysLogg”
+::
+	`G‘In¡ªû
+()).
+noquÙe
+
+
+	)
+
+8 cÚ¡ 
+ušt16_t
+ 
+	güc16_bË
+[256] =
+
+44 
+šlše
+ 
+ST_BYTE
+ 
+	$FromBCD_BYTE
+(
+ST_BYTE
+ 
+v®ue
+)
+
+46  ((
+v®ue
+ & 0xF0) >> 4) * 10 + (value & 0x0F);
+
+47 
+	}
+}
+
+49 
+ST_UINT16
+ 
+	$FromBCD_WORD
+(
+ST_UINT16
+ 
+v®ue
+)
+
+51  (
+ST_UINT16
+)
+	`FromBCD_BYTE
+((
+v®ue
+ & 0xFF00) >> 8) * 100 + (ST_UINT16)FromBCD_BYTE(value & 0x00FF);
+
+52 
+	}
+}
+
+54 
+ST_UINT32
+ 
+	$FromBCD_DWORD
+(
+ST_UINT32
+ 
+v®ue
+)
+
+56  (
+ST_UINT32
+)
+	`FromBCD_WORD
+((
+v®ue
+ & 0xFFFF0000) >> 16) * 10000 + (ST_UINT32)FromBCD_WORD(value & 0x0000FFFF);
+
+57 
+	}
+}
+
+59 
+šlše
+ 
+ST_BYTE
+ 
+	$TOBCD_BYTE
+(
+ST_BYTE
+ 
+v®ue
+)
+
+61  ((
+v®ue
+ / 10) << 4) + (value % 10);
+
+62 
+	}
+}
+
+64 
+ST_UINT16
+ 
+	$TOBCD_WORD
+(
+ST_UINT16
+ 
+v®ue
+)
+
+66  ((
+ST_UINT16
+)
+	`TOBCD_BYTE
+((
+v®ue
+ & 0xFF00) >> 8) << 8) + (ST_UINT16)TOBCD_BYTE(value & 0x00FF);
+
+67 
+	}
+}
+
+69 
+ST_UINT32
+ 
+	$TOBCD_DWORD
+(
+ST_UINT32
+ 
+v®ue
+)
+
+71  ((
+ST_UINT32
+)
+	`TOBCD_WORD
+((
+v®ue
+ & 0xFFFF0000) >> 16) << 16) + (ST_UINT32)TOBCD_WORD(value & 0x0000FFFF);
+
+72 
+	}
+}
+
+84 
+ušt16_t
+ 
+	$g‘_üc16
+ (cÚ¡ 
+ušt8_t
+ *
+pd©a
+, 
+nsize
+)
+
+86 
+ušt16_t
+ 
+üc
+ = 0xFFFF;
+
+87 
+nsize
+-- > 0)
+
+88 
+üc
+ = 
+üc16_bË
+[(üø& 0xFFè^ (*
+pd©a
+++)] ^ (crc >> 8);
+
+89  
+üc
+;
+
+90 
+	}
+}
+
+92 þas 
+	ccÚv”t
+
+
+94 
+	mpublic
+:
+
+96 
+‹m¶©e
+<
+ty³Çme
+ 
+T
+>
+
+97 
+T
+ 
+	$by‹s_to
+ (cÚ¡ * 
+by‹s
+, 
+size_t
+ 
+Ën
+)
+
+99 
+T
+ 
+v®ue
+;
+
+100 
+	`memýy
+ (&
+v®ue
+, 
+by‹s
+, 
+	`mš
+((
+T
+), 
+Ën
+));
+
+101  
+v®ue
+;
+
+104 
+	}
+};
+
+108 
+	gCModbusRTU
+::
+	$CModbusRTU
+()
+
+111 
+	}
+}
+
+113 
+CModbusRTU
+::~
+	$CModbusRTU
+()
+
+116 
+	}
+}
+
+118 
+CModbusRTU
+* 
+	$C»©eIn¡aû
+()
+
+120  
+Ãw
+ 
+	`CModbusRTU
+();
+
+121 
+	}
+}
+
+123 
+ST_BOOLEAN
+ 
+	gCModbusRTU
+::
+	$IsSuµÜtEngše
+(
+ST_INT
+ 
+’gšeTy³
+)
+
+126 
+	}
+}
+
+128 
+	gCModbusRTU
+::
+	$In™
+()
+
+130 
+m_bTask
+ = 
+çl£
+;
+
+131 
+m_cu¼—dIndex
+ = 0;
+
+132 
+m_»adIndex
+ = 0;
+
+133 
+	}
+}
+
+135 
+	gCModbusRTU
+::
+	$Unš™
+()
+
+138 
+	}
+}
+
+139 
+CModbusRTU
+::
+	$OnR—d
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+& 
+»aded
+)
+
+141 
+»aded
+ = 0;
+
+142 if(! 
+this
+->
+	`G‘CurPÜt
+())
+
+144 if(
+m_cu¼—dIndex
+ < 0 || m_cu¼—dIndex >ð
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»asCouÁ
+)
+
+146 
+	`ShowMes§ge
+ ("No configuration deviceemplate.");
+
+147 
+m_cu¼—dIndex
+ = 0;
+
+148 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+151 
+ST_INT
+ 
+š‹rv®
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘ChªÃl
+()->
+	`G‘ChªÃlInfo
+()->
+ChªÃlIÁ”v®
+;
+
+152 
+š‹rv®
+ = (interval > 2000 ? interval : 2000);
+
+154 
+ST_INT
+ 
+Ën
+ = 
+this
+->
+	`G‘CurPÜt
+()->
+	`PickBy‹s
+(
+pbuf
+, 5, 
+š‹rv®
+);
+
+155 if(
+Ën
+ < 5) {
+
+156 
+	`ShowMes§ge
+ ("Insufficient data†ength");
+
+157 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+160 
+ST_INT
+ 
+¡¬
+ = 0;
+
+161 ; 
+¡¬
+ < 
+Ën
+; ++star) {
+
+162 if(
+pbuf
+[
+¡¬
+] =ð(
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+)
+
+165 if(
+¡¬
+ > 0) {
+
+167 
+this
+->
+	`G‘CurPÜt
+()->
+	`R—dBy‹s
+(
+pbuf
+, 
+¡¬
+);
+
+169 if(
+¡¬
+ =ð
+Ën
+) {
+
+171 
+	`ShowMes§ge
+ ("Garbled code, clear buffer.");
+
+172 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+175 
+Ën
+ = 
+this
+->
+	`G‘CurPÜt
+()->
+	`PickBy‹s
+(
+pbuf
+, 5, 2000);
+
+176 
+ST_BYTE
+ 
+fuccode
+ = 
+pbuf
+[1 + 
+¡¬
+];
+
+177 if((
+fuccode
+ & 0xF0) == 0x80)
+
+179 
+Ën
+ = 5;
+
+181 if(
+fuccode
+ == 0x05)
+
+183 
+Ën
+ = 8;
+
+185 if(
+fuccode
+ == 0x10)
+
+187 
+Ën
+ = 8;
+
+189 if(
+fuccode
+ == 0x06)
+
+191 
+Ën
+ = 8;
+
+193 if(
+fuccode
+ =ð(
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+»adCode
+)
+
+196 
+ST_BYTE
+ 
+»adCouÁ
+ = 
+pbuf
+[2 + 
+¡¬
+];
+
+197 
+Ën
+ = 
+»adCouÁ
+ + 5;
+
+199 if(
+fuccode
+ =ð(
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+wr™eCode
+)
+
+202 
+Ën
+ = 8;
+
+206 
+	`ShowMes§ge
+ ("Not Found Function Code!");
+
+207 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+210 
+ST_INT
+ 
+Æ’
+ = 
+this
+->
+	`G‘CurPÜt
+()->
+	`PickBy‹s
+(
+pbuf
+, 
+Ën
+, 2000);
+
+211 if(
+Æ’
+ =ð
+Ën
+)
+
+213 
+this
+->
+	`G‘CurPÜt
+()->
+	`R—dBy‹s
+(
+pbuf
+, 
+Ën
+);
+
+214 
+ST_UINT16
+ 
+wCRC
+ = 
+	`g‘_üc16
+(&
+pbuf
+[0], 
+Ën
+-2);
+
+215 
+ST_UINT16
+ 
+nCRC
+ = 
+pbuf
+[
+Ën
+-2] +…buf[len-1] * 256;
+
+216 if(
+wCRC
+ =ð
+nCRC
+)
+
+218 
+»aded
+ = 
+Ën
+;
+
+230 
+	`ShowMes§ge
+ ("Insufficient data†ength.");
+
+231 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+233 
+	}
+}
+
+235 
+ST_BOOLEAN
+ 
+	gCModbusRTU
+::
+	$OnS’d
+()
+
+237 ià(
+this
+->
+	`G‘CurPÜt
+())
+
+238 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+240 
+m_bTask
+ = 
+çl£
+;
+
+241 if(
+this
+->
+	`HasTask
+(è&&his->
+	`G‘Task
+(&
+m_curTask
+))
+
+243 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"singleread"))
+
+246 
+msg
+[64];
+
+247 
+	`¥rštf
+(
+msg
+,"m_curTask.skAdd¸: %d",
+m_curTask
+.
+skAddr
+);
+
+248 
+	`ShowMes§ge
+(
+msg
+);
+
+249 
+	`S’dR—dCmd
+((
+ST_BYTE
+)0x03,
+m_curTask
+.
+skAddr
+,0x01);
+
+250 
+m_bTask
+ = 
+Œue
+;
+
+252 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"devicecontrol"))
+
+254 if(
+m_curTask
+.
+skCmdCode
+ == 0)
+
+255 
+	`S’dP»YK
+(
+m_curTask
+.
+skAddr
+,m_curTask.
+skV®ue
+);
+
+256 if(
+m_curTask
+.
+skCmdCode
+ == 1)
+
+257 
+	`S’dYK
+(
+m_curTask
+.
+skAddr
+,m_curTask.
+skV®ue
+);
+
+258 if(
+m_curTask
+.
+skCmdCode
+ == 2)
+
+259 
+	`S’dR—dCmd
+((
+ST_BYTE
+)
+m_curTask
+.
+skCmdCode
+,m_curTask.
+skAddr
+,m_curTask.
+skAddr1
+);
+
+262 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+263 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+264 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+265 
+	`mem£t
+(&
+m_curTask
+,0,(m_curTask));
+
+266  
+çl£
+;
+
+268 
+m_bTask
+ = 
+Œue
+;
+
+270 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"singlewrite"))
+
+280 
+Áy³
+ = 0;
+
+281 if(
+m_curTask
+.
+skAddr
+ =ð0x0D00è
+Áy³
+ = 1;
+
+282 
+	`S’dSšgËWr™eCmd
+((
+ST_INT
+)
+m_curTask
+.
+skV®ue
+,m_curTask.
+skAddr
+,
+Áy³
+);
+
+283 
+m_bTask
+ = 
+Œue
+;
+
+285 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"multiwrite"))
+
+288 
+	`S’dWr™eCmd
+(
+m_curTask
+.
+skP¬am
+,m_curTask.
+skP¬amL’
+,m_curTask.
+skAddr
+);
+
+289 
+m_bTask
+ = 
+Œue
+;
+
+291  
+Œue
+;
+
+293 cÚ¡ 
+DeviûInfo
+* 
+šfo
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+();
+
+294 if(
+šfo
+ && info->
+D©aA»asCouÁ
+ > 0)
+
+296 ià(
+m_»adIndex
+ >ð
+šfo
+->
+D©aA»asCouÁ
+)
+
+297 
+m_»adIndex
+ = 0;
+
+298 
+m_cu¼—dIndex
+ = 
+m_»adIndex
+++;
+
+299 
+	`S’dR—dCmd
+(
+šfo
+->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+»adCode
+, (
+ST_UINT16
+)šfo->D©aA»as[m_cu¼—dIndex].
+addr
+,
+
+300 
+šfo
+->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+d©aUn™L’
+ > 1 ?
+
+301 
+šfo
+->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+Ën
+ / info->D©aA»as[m_cu¼—dIndex].
+d©aUn™L’
+ : info->DataAreas[m_curreadIndex].len);
+
+303  
+Œue
+;
+
+304 
+	}
+}
+
+306 
+ST_BOOLEAN
+ 
+	gCModbusRTU
+::
+	$OnProûss
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+ 
+Ën
+)
+
+308 if(
+m_bTask
+)
+
+310 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"singlewrite") || !strcmp(m_curTask.taskCmd,"multiwrite"))
+
+312 
+	`ShowMes§ge
+("receive singlewirte order");
+
+313 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+314 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+315 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+316 
+	`Mem£t
+(&
+m_curTask
+, 0, (m_curTask));
+
+317  
+Œue
+;
+
+319 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"devicecontrol"))
+
+321 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+322 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+323 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+324 
+	`Mem£t
+(&
+m_curTask
+, 0, (m_curTask));
+
+325  
+Œue
+;
+
+327 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"singleread"))
+
+329 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+330 
+m_curTask
+.
+skResuÉ
+.
+»suÉD©aL’
+ = 
+pbuf
+[2];
+
+331 
+m_curTask
+.
+skResuÉ
+.
+»suÉV®ue
+ = ()(
+pbuf
+[3]*256 +…buf[4]);
+
+332 
+	`memýy
+(
+m_curTask
+.
+skResuÉ
+.
+»suÉD©a
+,&
+pbuf
+[3],m_curTask.skResuÉ.
+»suÉD©aL’
+);
+
+333 
+msg
+[64];
+
+334 
+	`¥rštf
+(
+msg
+,"»suÉ v®u:%f",
+m_curTask
+.
+skResuÉ
+.
+»suÉV®ue
+);
+
+335 
+	`ShowMes§ge
+(
+msg
+);
+
+336 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+337 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+338 
+	`Mem£t
+(&
+m_curTask
+, 0, (m_curTask));
+
+339  
+Œue
+;
+
+343 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+344 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+345 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+346 
+	`Mem£t
+(&
+m_curTask
+, 0, (m_curTask));
+
+347  
+Œue
+;
+
+350 if(
+m_cu¼—dIndex
+ >ð0 && m_cu¼—dIndex < 
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»asCouÁ
+
+
+351 && 
+pbuf
+[1] =ð(
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+»adCode
+)
+
+353 
+ST_BYTE
+ 
+couÁ
+ = 
+pbuf
+[2];
+
+354 
+	`ProûssMemÜy
+(&
+pbuf
+[3], 
+couÁ
+);
+
+356  
+Œue
+;
+
+357 
+	}
+}
+
+359 
+	gCModbusRTU
+::
+	$ProûssMemÜy
+(
+ST_BYTE
+* 
+buf
+, ST_BYTE 
+couÁ
+)
+
+361 
+ST_INT
+ 
+™emsize
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+™emCouÁ
+;
+
+362 
+ST_INT
+ 
+k
+ = 0; k < 
+™emsize
+; k++)
+
+364 cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+D©aA»as
+[
+m_cu¼—dIndex
+].
+™ems
+[
+k
+];
+
+365 if(
+couÁ
+ < (
+™em»f
+.
+addr
+ + i‹m»f.
+d©aL’
+))
+
+368 
+™em»f
+.
+d©aTy³
+) {
+
+369 
+VALTy³_Ch¬
+ :
+
+370 
+VALTy³_SBy‹
+:
+
+371 
+	`ProûssMemÜySBy‹
+ (
+buf
+, 
+™em»f
+); ;
+
+372 
+VALTy³_IÁ16
+:
+
+373 
+	`ProûssMemÜyIÁ16
+ (
+buf
+, 
+™em»f
+); ;
+
+374 
+VALTy³_IÁ32
+:
+
+375 
+	`ProûssMemÜyIÁ32
+ (
+buf
+, 
+™em»f
+); ;
+
+376 
+VALTy³_By‹
+ :
+
+377 
+	`ProûssMemÜyBy‹
+ (
+buf
+, 
+™em»f
+); ;
+
+378 
+VALTy³_UIÁ16
+:
+
+379 
+	`ProûssMemÜyUIÁ16
+ (
+buf
+, 
+™em»f
+); ;
+
+380 
+VALTy³_UIÁ32
+:
+
+381 
+	`ProûssMemÜyUIÁ32
+ (
+buf
+, 
+™em»f
+); ;
+
+382 
+VALTy³_Flßt
+:
+
+383 
+	`ProûssMemÜySšgË
+ (
+buf
+, 
+™em»f
+); ;
+
+384 
+VALTy³_BoÞ—n
+:
+
+385 
+	`ProûssMemÜyBoÞ—n
+ (
+buf
+, 
+™em»f
+); ;
+
+386 
+VALTy³_SŒšg
+:
+
+387 
+	`ProûssMemÜySŒšg
+ (
+buf
+, 
+™em»f
+); ;
+
+388 
+VALTy³_Bš¬y
+:
+
+389 
+	`ProûssMemÜyBy‹s
+ (
+buf
+, 
+™em»f
+); ;
+
+390 
+VALTy³_DoubË
+:
+
+391 
+	`ProûssMemÜyDoubË
+ (
+buf
+, 
+™em»f
+); ;
+
+392 
+VALTy³_Decim®
+:
+
+393 
+	`ProûssMemÜyDecim®
+ (
+buf
+, 
+™em»f
+); ;
+
+394 
+VALTy³_D©eTime
+:
+
+395 
+	`ProûssMemÜyD©eTime
+ (
+buf
+, 
+™em»f
+); ;
+
+396 
+VALTy³_IÁ64
+:
+
+397 
+	`ProûssMemÜyIÁ64
+ (
+buf
+, 
+™em»f
+); ;
+
+398 
+VALTy³_UIÁ64
+:
+
+399 
+	`ProûssMemÜyUIÁ64
+ (
+buf
+, 
+™em»f
+); ;
+
+403 
+	}
+}
+
+405 
+šlše
+ 
+ST_UINT16
+ 
+	$bsw­16
+ (
+ST_UINT16
+ 
+v®ue
+)
+
+407  (((
+v®ue
+ & 0x00FF) << 8) | ((value & 0xFF00) >> 8));
+
+408 
+	}
+}
+
+409 
+šlše
+ 
+ST_UINT32
+ 
+	$bsw­32
+ (
+ST_UINT32
+ 
+v®ue
+)
+
+411  (((
+ST_UINT32
+)
+	`bsw­16
+(
+v®ue
+ & 0x0000FFFF) << 16) | bswap16((value & 0xFFFF0000) >> 16));
+
+412 
+	}
+}
+
+413 
+šlše
+ 
+ST_UINT64
+ 
+	$bsw­64
+ (
+ST_UINT64
+ 
+v®ue
+)
+
+415  (((
+ST_UINT64
+)
+	`bsw­32
+(
+v®ue
+ & 0x00000000FFFFFFFF) << 32) | bswap32((value & 0xFFFFFFFF00000000) >> 32));
+
+416 
+	}
+}
+
+417 
+šlše
+ 
+ST_UINT32
+ 
+	$wsw­32
+ (
+ST_UINT32
+ 
+v®ue
+)
+
+419  (((
+v®ue
+ & 0x0000FFFF) << 16) | ((value & 0xFFFF0000) >> 16));
+
+420 
+	}
+}
+
+421 
+šlše
+ 
+ST_UINT64
+ 
+	$wsw­64
+ (
+ST_UINT64
+ 
+v®ue
+)
+
+423  (((
+ST_UINT64
+)
+	`wsw­32
+(
+v®ue
+ & 0x00000000FFFFFFFF) << 32) | wswap32((value & 0xFFFFFFFF00000000) >> 32));
+
+424 
+	}
+}
+
+426 
+	gCModbusRTU
+::
+	$ProûssMemÜySBy‹
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+428 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+430 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+431 if(
+™em»f
+.
+’dB™
+ - i‹m»f.
+begšB™
+ < 7)
+
+433 
+v®ue
+ = (v®u& (0xFF << (
+™em»f
+.
+begšB™
+ -1))è& (0xFF >> (8 - i‹m»f.
+’dB™
+));
+
+434 
+v®ue
+ = v®u>> (
+™em»f
+.
+begšB™
+ - 1);
+
+436 if(
+™em»f
+.
+cÛfic›Á
+ < 0)
+
+438 
+v®ue
+ = !value;
+
+440 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_BYTE
+)
+v®ue
+);
+
+447 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+449 
+ST_INT16
+ 
+v®ue
+ = 0x0000;
+
+450 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+452 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+,  (value));
+
+453 *((
+ST_UINT16
+*)&
+v®ue
+èð
+	`bsw­16
+(*((ST_UINT16*)&value));
+
+457 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+,  (value));
+
+459 if(
+™em»f
+.
+’dB™
+ - i‹m»f.
+begšB™
+ < 15)
+
+461 
+v®ue
+ = (v®u& (0xFFFF << (
+™em»f
+.
+begšB™
+ -1))è& (0xFFFF >> (16 - i‹m»f.
+’dB™
+));
+
+462 
+v®ue
+ = v®u>> (
+™em»f
+.
+begšB™
+ - 1);
+
+464 if(
+™em»f
+.
+cÛfic›Á
+ < 0)
+
+466 
+v®ue
+ = !value;
+
+468 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_BYTE
+)
+v®ue
+);
+
+470 
+	}
+}
+
+472 
+	gCModbusRTU
+::
+	$ProûssMemÜyIÁ16
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+474 
+ST_FLOAT
+ 
+fv®ue
+ = 0;
+
+475 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+477 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+478 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+480 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+482 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_CHAR
+*)&
+v®ue
+));
+
+484 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+486 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+488 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+489 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+490 
+v®ue
+ = 
+	`FromBCD_WORD
+(value);
+
+491 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+493 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+495 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+496 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+497 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(value));
+
+498 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+500 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+502 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+503 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+504 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+506 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+508 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+509 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+510 
+v®ue
+ = 
+	`bsw­16
+(value);
+
+511 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+514 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+516 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+518 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+519 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+520 
+v®ue
+ = 
+	`FromBCD_DWORD
+(value);
+
+521 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+523 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+525 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+526 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+527 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(value));
+
+528 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+530 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+532 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+533 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+534 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+536 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+538 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+539 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+540 
+v®ue
+ = 
+	`bsw­32
+(value);
+
+541 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+543 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+545 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+546 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+547 
+v®ue
+ = 
+	`htÚl1
+(value);
+
+548 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+550 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+552 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+553 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+554 
+v®ue
+ = 
+	`wsw­32
+(value);
+
+555 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+557 if((
+™em»f
+.
+codeTy³
+ == 6))
+
+559 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+560 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+561 
+ST_UINT16
+* 
+dv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+562 
+fv®ue
+ = (
+ST_FLOAT
+)(
+dv®ue
+[1]*10000 + dvalue[0]);
+
+565 if(
+™em»f
+.
+d©aL’
+ == 8)
+
+567 if((
+™em»f
+.
+codeTy³
+ == 10))
+
+569 
+ST_UINT64
+ 
+v®ue
+ = 0;
+
+570 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+571 
+ST_UINT16
+* 
+dv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+572 
+fv®ue
+ = (
+ST_FLOAT
+)(
+	`bsw­16
+(
+dv®ue
+[3])*1000000000000 + bswap16(dvalue[2])*100000000 + bswap16(dvalue[1])*10000 + bswap16(dvalue[0]));
+
+575 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+577 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+579 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+581 
+	}
+}
+
+583 
+	gCModbusRTU
+::
+	$ProûssMemÜyIÁ32
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+585 
+ST_DOUBLE
+ 
+fv®ue
+ = 0;
+
+586 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+588 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+589 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+591 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+593 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_CHAR
+*)&
+v®ue
+));
+
+595 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+597 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+599 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+600 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+601 
+v®ue
+ = 
+	`FromBCD_WORD
+(value);
+
+602 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+604 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+606 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+607 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+608 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(value));
+
+609 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+611 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+613 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+614 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+615 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+617 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+619 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+620 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+621 
+v®ue
+ = 
+	`bsw­16
+(value);
+
+622 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+625 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+627 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+629 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+630 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+631 
+v®ue
+ = 
+	`FromBCD_DWORD
+(value);
+
+632 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+634 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+636 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+637 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+638 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(value));
+
+639 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+641 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+643 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+644 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+645 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+647 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+649 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+650 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+651 
+v®ue
+ = 
+	`bsw­32
+(value);
+
+652 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+654 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+656 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+657 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+658 
+v®ue
+ = 
+	`htÚl1
+(value);
+
+659 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+661 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+663 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+664 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+665 
+v®ue
+ = 
+	`wsw­32
+(value);
+
+666 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT32
+*)&
+v®ue
+));
+
+668 if((
+™em»f
+.
+codeTy³
+ == 6))
+
+670 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+671 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+672 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+673 
+fv®ue
+ = (
+ST_DOUBLE
+)(
+pbcdv®ue
+[1]*10000 +…bcdvalue[0]);
+
+676 if(
+™em»f
+.
+d©aL’
+ == 8)
+
+678 if((
+™em»f
+.
+codeTy³
+ == 10))
+
+680 
+ST_UINT64
+ 
+v®ue
+ = 0;
+
+681 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+682 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+683 
+fv®ue
+ = (
+ST_DOUBLE
+)(
+	`bsw­16
+(
+pbcdv®ue
+[3])*1000000000000 + bswap16(pbcdvalue[2])*100000000 + bswap16(pbcdvalue[1])*10000 + bswap16(pbcdvalue[0]));
+
+686 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+688 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+690 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+692 
+	}
+}
+
+694 
+	gCModbusRTU
+::
+	$ProûssMemÜyBy‹
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+696 
+	`ProûssMemÜySBy‹
+(
+buf
+, 
+™em»f
+);
+
+697 
+	}
+}
+
+699 
+	gCModbusRTU
+::
+	$ProûssMemÜyUIÁ16
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+701 
+ST_FLOAT
+ 
+fv®ue
+ = 0;
+
+702 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+704 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+705 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+707 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+709 
+fv®ue
+ = (
+ST_FLOAT
+)(
+v®ue
+);
+
+711 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+713 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+715 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+716 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+717 
+fv®ue
+ = 
+	`FromBCD_WORD
+(
+v®ue
+);
+
+719 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+721 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+722 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+723 
+fv®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(
+v®ue
+));
+
+725 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+727 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+728 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+729 
+fv®ue
+ = (
+ST_FLOAT
+)
+v®ue
+;
+
+731 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+733 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+734 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+735 
+fv®ue
+ = (
+ST_FLOAT
+)
+	`bsw­16
+(
+v®ue
+);
+
+738 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+740 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+742 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+743 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+744 
+fv®ue
+ = 
+	`FromBCD_DWORD
+(
+v®ue
+);
+
+746 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+748 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+749 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+750 
+fv®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(
+v®ue
+));
+
+752 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+754 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+755 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+756 
+fv®ue
+ = (
+ST_FLOAT
+)
+v®ue
+;
+
+758 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+760 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+761 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+762 
+fv®ue
+ = 
+	`bsw­32
+(
+v®ue
+);
+
+764 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+766 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+767 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+768 
+fv®ue
+ = 
+	`htÚl1
+(
+v®ue
+);
+
+770 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+772 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+773 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+774 
+fv®ue
+ = 
+	`wsw­32
+(
+v®ue
+);
+
+776 if((
+™em»f
+.
+codeTy³
+ == 6))
+
+778 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+779 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+780 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+781 
+fv®ue
+ = (
+ST_FLOAT
+)(
+pbcdv®ue
+[1]*10000 +…bcdvalue[0]);
+
+784 if(
+™em»f
+.
+d©aL’
+ == 8)
+
+786 if((
+™em»f
+.
+codeTy³
+ == 10))
+
+788 
+ST_UINT64
+ 
+v®ue
+ = 0;
+
+789 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+790 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+791 
+fv®ue
+ = (
+ST_FLOAT
+)(
+	`bsw­16
+(
+pbcdv®ue
+[3])*1000000000000 + bswap16(pbcdvalue[2])*100000000 + bswap16(pbcdvalue[1])*10000 + bswap16(pbcdvalue[0]));
+
+794 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+796 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+798 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+800 
+	}
+}
+
+802 
+	gCModbusRTU
+::
+	$ProûssMemÜyUIÁ32
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+804 
+ST_DOUBLE
+ 
+fv®ue
+ = 0;
+
+805 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+807 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+808 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+810 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+812 
+fv®ue
+ = (
+ST_DOUBLE
+)(
+v®ue
+);
+
+814 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+816 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+818 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+819 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+820 
+fv®ue
+ = 
+	`FromBCD_WORD
+(
+v®ue
+);
+
+822 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+824 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+825 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+826 
+fv®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(
+v®ue
+));
+
+828 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+830 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+831 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+832 
+fv®ue
+ = (
+ST_DOUBLE
+)
+v®ue
+;
+
+834 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+836 
+ST_UINT16
+ 
+v®ue
+ = 0;
+
+837 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+838 
+fv®ue
+ = 
+	`bsw­16
+(
+v®ue
+);
+
+841 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+843 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+845 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+846 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+847 
+fv®ue
+ = 
+	`FromBCD_DWORD
+(
+v®ue
+);
+
+849 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+851 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+852 
+	`memýy
+(&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+853 
+fv®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(
+v®ue
+));
+
+855 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+857 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+858 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+859 
+fv®ue
+ = (
+ST_DOUBLE
+)
+v®ue
+;
+
+861 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+863 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+864 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+865 
+fv®ue
+ = 
+	`bsw­32
+(
+v®ue
+);
+
+867 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+869 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+870 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+871 
+fv®ue
+ = 
+	`htÚl1
+(
+v®ue
+);
+
+873 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+875 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+876 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+877 
+fv®ue
+ = 
+	`wsw­32
+(
+v®ue
+);
+
+879 if((
+™em»f
+.
+codeTy³
+ == 6))
+
+881 
+ST_UINT32
+ 
+v®ue
+ = 0;
+
+882 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+883 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+884 
+fv®ue
+ = (
+ST_DOUBLE
+)(
+pbcdv®ue
+[1]*10000 +…bcdvalue[0]);
+
+887 if(
+™em»f
+.
+d©aL’
+ == 8)
+
+889 if((
+™em»f
+.
+codeTy³
+ == 10))
+
+891 
+ST_UINT64
+ 
+v®ue
+ = 0;
+
+892 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, (value));
+
+893 
+ST_UINT16
+* 
+pbcdv®ue
+ = (ST_UINT16*)&
+v®ue
+;
+
+894 
+fv®ue
+ = (
+ST_DOUBLE
+)(
+	`bsw­16
+(
+pbcdv®ue
+[3])*1000000000000 + bswap16(pbcdvalue[2])*100000000 + bswap16(pbcdvalue[1])*10000 + bswap16(pbcdvalue[0]));
+
+897 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+899 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+901 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+903 
+	}
+}
+
+905 
+	gCModbusRTU
+::
+	$ProûssMemÜySšgË
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+907 
+ST_FLOAT
+ 
+fv®ue
+ = 0;
+
+908 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+910 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+911 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+913 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+915 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_CHAR
+*)&
+v®ue
+));
+
+917 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+919 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+921 
+ST_UINT16
+ 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+922 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+924 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+926 
+ST_UINT16
+ 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+)));
+
+927 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+929 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+931 
+ST_UINT16
+ 
+v®ue
+ = 
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+);
+
+932 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+934 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+936 
+ST_UINT16
+ 
+v®ue
+ = 
+	`bsw­16
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+937 
+fv®ue
+ = (
+ST_FLOAT
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+940 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+942 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+944 
+ST_UINT32
+ 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+945 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+947 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+949 
+ST_UINT32
+ 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+)));
+
+950 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+952 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+954 
+ST_UINT32
+ 
+v®ue
+ = 
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+);
+
+955 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+957 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+959 
+ST_UINT32
+ 
+v®ue
+ = 
+	`bsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+960 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+962 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+964 
+ST_UINT32
+ 
+v®ue
+ = 
+	`htÚl1
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+965 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+967 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+969 
+ST_UINT32
+ 
+v®ue
+ = 
+	`wsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+970 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+974 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+976 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+978 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+980 
+	}
+}
+
+982 
+	gCModbusRTU
+::
+	$ProûssMemÜyBoÞ—n
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+984 
+ST_BYTE
+ 
+v®ue
+ = (
+ST_BOOLEAN
+)(*(
+buf
+ + 
+™em»f
+.
+addr
+));
+
+985 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+v®ue
+);
+
+986 
+	}
+}
+
+988 
+	gCModbusRTU
+::
+	$ProûssMemÜySŒšg
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+991 
+	}
+}
+
+993 
+	gCModbusRTU
+::
+	$ProûssMemÜyBy‹s
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+996 
+	}
+}
+
+998 
+	gCModbusRTU
+::
+	$ProûssMemÜyDoubË
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+1000 
+ST_DOUBLE
+ 
+fv®ue
+ = 0;
+
+1001 if(
+™em»f
+.
+d©aL’
+ == 1)
+
+1003 
+ST_BYTE
+ 
+v®ue
+ = *(
+buf
+ + 
+™em»f
+.
+addr
+);
+
+1004 if((
+™em»f
+.
+codeTy³
+ == 2) || (itemref.codeType == 3))
+
+1006 
+fv®ue
+ = 
+	`FromBCD_BYTE
+(
+v®ue
+);
+
+1008 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_CHAR
+*)&
+v®ue
+));
+
+1010 if(
+™em»f
+.
+d©aL’
+ == 2)
+
+1012 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+1014 
+ST_UINT16
+ 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1015 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+1017 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+1019 
+ST_UINT16
+ 
+v®ue
+ = 
+	`FromBCD_WORD
+(
+	`bsw­16
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+)));
+
+1020 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+1022 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+1024 
+ST_UINT16
+ 
+v®ue
+ = 
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+);
+
+1025 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+1027 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+1029 
+ST_UINT16
+ 
+v®ue
+ = 
+	`bsw­16
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt16_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1030 
+fv®ue
+ = (
+ST_DOUBLE
+)(*((
+ST_INT16
+*)&
+v®ue
+));
+
+1033 if(
+™em»f
+.
+d©aL’
+ == 4)
+
+1035 if((
+™em»f
+.
+codeTy³
+ == 2))
+
+1037 
+ST_UINT32
+ 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1038 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1040 if((
+™em»f
+.
+codeTy³
+ == 3))
+
+1042 
+ST_UINT32
+ 
+v®ue
+ = 
+	`FromBCD_DWORD
+(
+	`bsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+)));
+
+1043 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1045 if((
+™em»f
+.
+codeTy³
+ == 0))
+
+1047 
+ST_UINT32
+ 
+v®ue
+ = 
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+);
+
+1048 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1050 if((
+™em»f
+.
+codeTy³
+ == 1))
+
+1052 
+ST_UINT32
+ 
+v®ue
+ = 
+	`bsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1053 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1055 if((
+™em»f
+.
+codeTy³
+ == 4))
+
+1057 
+ST_UINT32
+ 
+v®ue
+ = 
+	`htÚl1
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1058 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1061 if((
+™em»f
+.
+codeTy³
+ == 5))
+
+1063 
+ST_UINT32
+ 
+v®ue
+ = 
+	`wsw­32
+(
+cÚv”t
+::
+by‹s_to
+<
+ušt32_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1064 
+fv®ue
+ = *((
+ST_FLOAT
+*)&
+v®ue
+);
+
+1067 ià(
+™em»f
+.
+d©aL’
+ == 8)
+
+1069 
+™em»f
+.
+codeTy³
+) {
+
+1071 
+ST_UINT64
+ 
+v®ue
+ = 
+cÚv”t
+::
+by‹s_to
+<
+ušt64_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+);
+
+1072 
+fv®ue
+ = (*((
+ST_DOUBLE
+*)&
+v®ue
+));
+
+1075 
+ST_UINT64
+ 
+v®ue
+ = 
+	`bsw­64
+ (
+cÚv”t
+::
+by‹s_to
+<
+ušt64_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1076 
+fv®ue
+ = (*((
+ST_DOUBLE
+*)&
+v®ue
+));
+
+1081 
+ST_UINT64
+ 
+v®ue
+ = 
+	`wsw­64
+ (
+cÚv”t
+::
+by‹s_to
+<
+ušt64_t
+>(
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+d©aL’
+));
+
+1082 
+fv®ue
+ = (*((
+ST_DOUBLE
+*)&
+v®ue
+));
+
+1087 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+1088 
+fv®ue
+ = fv®u* 
+™em»f
+.
+cÛfic›Á
+;
+
+1090 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, 
+fv®ue
+);
+
+1092 
+	}
+}
+
+1094 
+	gCModbusRTU
+::
+	$ProûssMemÜyDecim®
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+1097 
+	}
+}
+
+1099 
+	gCModbusRTU
+::
+	$ProûssMemÜyD©eTime
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+1101 if(
+™em»f
+.
+d©aL’
+ == 8)
+
+1105 
+	}
+}
+
+1107 
+boÞ
+ 
+	$By‹sToUIÁ64
+ (cÚ¡ 
+ST_BYTE
+* 
+buf
+, 
+ST_INT
+ 
+cod‘y³
+, 
+ST_UINT64
+& 
+v®ue
+)
+
+1109 
+cod‘y³
+) {
+
+1111 
+	`memýy
+ (&
+v®ue
+, 
+buf
+, (value));
+
+1112 }  
+Œue
+;
+
+1114 
+v®ue
+ = 
+	`bsw­64
+ (
+cÚv”t
+::
+by‹s_to
+<
+ušt64_t
+>(
+buf
+, (uint64_t)));
+
+1115 }  
+Œue
+;
+
+1117 }  
+çl£
+;
+
+1119 
+v®ue
+ = 
+	`wsw­64
+ (
+cÚv”t
+::
+by‹s_to
+<
+ušt64_t
+>(
+buf
+, (uint64_t)));
+
+1120 }  
+Œue
+;
+
+1122  
+çl£
+;
+
+1123 
+	}
+}
+
+1125 
+	gCModbusRTU
+::
+	$ProûssMemÜyIÁ64
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+1127 ià(
+™em»f
+.
+d©aL’
+ < 8) {
+
+1128 
+	`ProûssMemÜyIÁ32
+ (
+buf
+, 
+™em»f
+);
+
+1131 
+ST_INT64
+ 
+v®ue
+ = 0;
+
+1132 
+ST_UINT64
+& 
+v®»f
+ = *((ST_UINT64*)&
+v®ue
+);
+
+1133 ià(
+	`By‹sToUIÁ64
+ (
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+codeTy³
+, 
+v®»f
+)) {
+
+1134 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+1135 
+v®ue
+ *ð
+™em»f
+.
+cÛfic›Á
+;
+
+1136 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_DOUBLE
+)
+v®ue
+);
+
+1138 
+	}
+}
+
+1140 
+	gCModbusRTU
+::
+	$ProûssMemÜyUIÁ64
+(
+ST_BYTE
+* 
+buf
+, cÚ¡ 
+ST_D©aA»aI‹m
+& 
+™em»f
+)
+
+1142 ià(
+™em»f
+.
+d©aL’
+ < 6) {
+
+1143 
+	`ProûssMemÜyUIÁ32
+ (
+buf
+, 
+™em»f
+);
+
+1146 
+ST_UINT64
+ 
+v®ue
+ = 0;
+
+1147 ià(
+™em»f
+.
+d©aL’
+ == 6) {
+
+1148 
+™em»f
+.
+codeTy³
+) {
+
+1150 
+	`memýy
+ (&
+v®ue
+, 
+buf
+ + 
+™em»f
+.
+addr
+, 6);
+
+1151 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+1152 
+v®ue
+ *ð
+™em»f
+.
+cÛfic›Á
+;
+
+1153 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_DOUBLE
+)
+v®ue
+);
+
+1156 
+v®ue
+ = (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ ]) * 0x10000000000
+
+1157 + (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ + 1]) * 0x100000000
+
+1158 + (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ + 2]) * 0x1000000
+
+1159 + (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ + 3]) * 0x10000
+
+1160 + (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ + 4]) * 0x100
+
+1161 + (
+ST_UINT64
+)(
+buf
+[
+™em»f
+.
+addr
+ + 5]);
+
+1162 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+1163 
+v®ue
+ *ð
+™em»f
+.
+cÛfic›Á
+;
+
+1164 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_DOUBLE
+)
+v®ue
+);
+
+1169 ià(
+	`By‹sToUIÁ64
+ (
+buf
+ + 
+™em»f
+.
+addr
+, i‹m»f.
+codeTy³
+, 
+v®ue
+)) {
+
+1170 if(
+™em»f
+.
+cÛfic›Á
+ != 0)
+
+1171 
+v®ue
+ *ð
+™em»f
+.
+cÛfic›Á
+;
+
+1172 
+this
+->
+	`Upd©eV®ue
+(
+™em»f
+.
+id
+, (
+ST_DOUBLE
+)
+v®ue
+);
+
+1174 
+	}
+}
+
+1176 
+	gCModbusRTU
+::
+	$S’dR—dCmd
+(
+ST_BYTE
+ 
+code
+,
+ST_UINT
+ 
+»adAddr
+,ST_UINT 
+couÁ
+)
+
+1178 
+ST_BYTE
+ 
+£ndbuf
+[8];
+
+1179 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1180 
+£ndbuf
+[1] = 
+code
+;
+
+1181 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+»adAddr
+);
+
+1182 
+	`FžlWORD
+(
+£ndbuf
+ + 4,
+couÁ
+);
+
+1183 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 6èð
+	`g‘_üc16
+(sendbuf,6);
+
+1184 
+this
+->
+	`S’d
+(
+£ndbuf
+,8);
+
+1185 
+	}
+}
+
+1187 
+	gCModbusRTU
+::
+	$S’dYK
+(
+ST_UINT
+ 
+wr™eAddr
+,
+ST_INT
+ 
+d©a
+)
+
+1189 
+ST_BYTE
+ 
+£ndbuf
+[32] = {0};
+
+1190 
+Ën
+ = 0;
+
+1192 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1193 
+£ndbuf
+[1] = 0x06;
+
+1194 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+wr™eAddr
+);
+
+1195 
+	`FžlWORD
+(
+£ndbuf
+ + 4,
+d©a
+);
+
+1196 
+Ën
+ = 6;
+
+1197 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 
+Ën
+èð
+	`g‘_üc16
+(sendbuf,len);
+
+1198 
+this
+->
+	`S’d
+(
+£ndbuf
+,
+Ën
++2);
+
+1209 
+	}
+}
+
+1211 
+	gCModbusRTU
+::
+	$S’dP»YK
+(
+ST_UINT
+ 
+wr™eAddr
+,
+ST_BOOLEAN
+ 
+bIsOn
+)
+
+1213 
+ST_BYTE
+ 
+£ndbuf
+[32] = {0};
+
+1214 
+Ën
+ = 0;
+
+1216 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1217 
+£ndbuf
+[1] = 0x06;
+
+1218 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+wr™eAddr
+);
+
+1219 
+	`FžlWORD
+(
+£ndbuf
+ + 4,
+bIsOn
+);
+
+1220 
+Ën
+ = 6;
+
+1221 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 
+Ën
+èð
+	`g‘_üc16
+(sendbuf,len);
+
+1222 
+this
+->
+	`S’d
+(
+£ndbuf
+,
+Ën
++2);
+
+1224 
+	}
+}
+
+1226 
+	gCModbusRTU
+::
+	$S’dYT
+(
+ST_UINT
+ 
+wr™eAddr
+,ST_UINT 
+wIndex
+,
+ST_BOOLEAN
+ 
+bIsOn
+)
+
+1228 
+ST_BYTE
+ 
+£ndbuf
+[256];
+
+1229 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1230 
+£ndbuf
+[1] = 0x05;
+
+1231 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+wr™eAddr
+);
+
+1232 if(
+bIsOn
+)
+
+1233 
+£ndbuf
+[4] = 0xFF;
+
+1235 
+£ndbuf
+[4] = 0x00;
+
+1236 
+£ndbuf
+[5] = 0x00;
+
+1237 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 6èð
+	`g‘_üc16
+(sendbuf,6);
+
+1238 
+this
+->
+	`S’d
+(
+£ndbuf
+,8);
+
+1240 
+	}
+}
+
+1241 
+	gCModbusRTU
+::
+	$S’dSšgËWr™eCmd
+(
+ST_INT
+ 
+d©a
+,ST_INT 
+»adAddr
+,ST_INT 
+nTy³
+)
+
+1244 
+ST_BYTE
+ 
+£ndbuf
+[256];
+
+1245 
+ST_INT
+ 
+Ën
+ = 0;
+
+1247 if(
+nTy³
+ == 1)
+
+1249 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1250 
+£ndbuf
+[1] = 0x10;
+
+1251 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+»adAddr
+);
+
+1252 
+£ndbuf
+[4] = 0x00;
+
+1253 
+£ndbuf
+[5] = 0x01;
+
+1254 
+£ndbuf
+[6] = 0x02;
+
+1255 
+	`FžlWORD
+(
+£ndbuf
+ + 7,
+d©a
+);
+
+1256 
+Ën
+ = 9;
+
+1257 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 
+Ën
+èð
+	`g‘_üc16
+(sendbuf,len);
+
+1258 
+this
+->
+	`S’d
+(
+£ndbuf
+,
+Ën
++2);
+
+1260 if(
+nTy³
+ == 0)
+
+1263 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1264 
+£ndbuf
+[1] = 0x06;
+
+1265 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+»adAddr
+);
+
+1266 
+	`FžlWORD
+(
+£ndbuf
+ + 4,
+d©a
+);
+
+1267 
+Ën
+ = 6;
+
+1268 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 
+Ën
+èð
+	`g‘_üc16
+(sendbuf,len);
+
+1269 
+this
+->
+	`S’d
+(
+£ndbuf
+,
+Ën
++2);
+
+1300 
+	}
+}
+
+1302 
+	gCModbusRTU
+::
+	$S’dWr™eCmd
+(
+ST_UCHAR
+* 
+pD©a
+,
+ST_UINT
+ 
+d©aL’
+,ST_UINT 
+addr
+)
+
+1304 if((
+d©aL’
+>=1024) || (dataLen<=0)) ;
+
+1305 
+ST_BYTE
+ 
+£ndbuf
+[1024];
+
+1306 
+ST_INT
+ 
+i
+=0;i<1024;i++)
+
+1307 
+£ndbuf
+[
+i
+] = 0xff;
+
+1308 
+ST_INT
+ 
+Ën
+ = 0;
+
+1309 
+ST_INT
+ 
+nd©aL’
+ = (
+d©aL’
+%2)?(dataLen/2+1):(dataLen/2);
+
+1310 
+£ndbuf
+[0] = (
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+;
+
+1311 
+£ndbuf
+[1] = 0x10;
+
+1312 
+	`FžlWORD
+(
+£ndbuf
+ + 2,
+addr
+);
+
+1313 
+	`FžlWORD
+(
+£ndbuf
+ + 4,
+nd©aL’
+);
+
+1314 
+£ndbuf
+[6] = 
+nd©aL’
+*2;
+
+1315 
+	`memýy
+(
+£ndbuf
+ + 7,
+pD©a
+,
+d©aL’
+);
+
+1316 
+Ën
+ = 7 + 
+nd©aL’
+*2;
+
+1317 *(
+ST_UINT16
+*)(
+£ndbuf
+ + 
+Ën
+èð
+	`g‘_üc16
+(sendbuf,len);
+
+1318 
+this
+->
+	`S’d
+(
+£ndbuf
+,
+Ën
+ + 2);
+
+1319 
+	}
+}
+
+1321 
+	gCModbusRTU
+::
+	$FžlWORD
+(
+ST_BYTE
+* 
+buf
+,
+ST_UINT
+ 
+v
+)
+
+1323 
+ST_BYTE
+* 
+pv
+ = (ST_BYTE*)&
+v
+;
+
+1324 
+buf
+[0] = 
+pv
+[1];
+
+1325 
+buf
+[1] = 
+pv
+[0];
+
+1326 
+	}
+}
+
+1328 
+ST_UINT
+ 
+	gCModbusRTU
+::
+	$G‘AµWORDV®ue
+(
+ST_UINT
+ 
+v
+,
+ST_INT
+ 
+cod‘y³
+)
+
+1330 if(
+cod‘y³
+ == 1 || codetype == 4)
+
+1332  
+	`bsw­16
+(
+v
+);
+
+1334 if(
+cod‘y³
+ == 2)
+
+1336  
+	`FromBCD_WORD
+(
+v
+);
+
+1338  
+v
+;
+
+1339 
+	}
+}
+
+1341 
+ST_UINT32
+ 
+	gCModbusRTU
+::
+	$htÚl1
+(
+ST_UINT32
+ 
+dv
+)
+
+1343 
+ST_UINT16
+ 
+dwHTemp
+ = (ST_UINT16)((
+dv
+&0xffff0000)>>16);
+
+1344 
+ST_UINT16
+ 
+dwLTemp
+ = (ST_UINT16)(
+dv
+&0x0000ffff);
+
+1345 
+ST_UINT16
+ 
+wLTemp
+ = 
+	`bsw­16
+(
+dwLTemp
+);
+
+1346 
+ST_UINT16
+ 
+wHTemp
+ = 
+	`bsw­16
+(
+dwHTemp
+);
+
+1347 
+ST_UINT32
+ 
+dwTemp
+ = 
+wHTemp
+;
+
+1348  ((
+dwTemp
+<<16)|
+wLTemp
+);
+
+1349 
+	}
+}
+
+1351 
+	gCModbusRTU
+::
+	$S’dWr™eCmd
+(
+ST_UCHAR
+* 
+pD©a
+,
+ST_UINT
+ 
+d©aL’
+)
+
+1353 
+ST_BYTE
+ 
+£ndäame
+[1024];
+
+1354 if(
+d©aL’
+>=1024) ;
+
+1355 
+ST_UINT
+ 
+i
+ = 0; i < 
+d©aL’
+; i++)
+
+1357 
+£ndäame
+[
+i
+] = 
+pD©a
+[i];
+
+1359 
+this
+->
+	`S’d
+(
+£ndäame
+, 
+d©aL’
+);
+
+1360 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+2
+166
+/home/zengrong/wedo/protocols/txjprotocolmodbusrtu_zhu_ZGDZ_06/include/CModbusRTU.h
+/home/zengrong/wedo/protocols/txjprotocolmodbusrtu_zhu_ZGDZ_06/src/CModbusRTU.cpp

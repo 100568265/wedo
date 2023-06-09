@@ -1,0 +1,11 @@
+<NotepadPlus>
+    <Project name="iec104">
+        <Folder name="header">
+            <File name="include\C104.h" />
+            <File name="include\iec60870_5_104_types.h" />
+        </Folder>
+        <Folder name="source">
+            <File name="src\C104.cpp" />
+        </Folder>
+    </Project>
+</NotepadPlus>

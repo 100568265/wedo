@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="storagetest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/storagetest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="four_gnu_gcc_compiler" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fpic" />
+					<Add option="-std=c++11" />
+					<Add option="-std=gnu++11" />
+					<Add directory="../../includes" />
+					<Add directory="../../coresource/libcore/include" />
+					<Add directory="../../coresource/librtbase/include" />
+					<Add directory="../../coresource/libsql/include" />
+					<Add directory="../../coresource/libvalidator/include" />
+					<Add directory="../../coresource/libwedo/wedo" />
+					<Add directory="../../coresource/libxml/include" />
+					<Add directory="../../coresource/libcmn/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lrt" />
+					<Add option="-ldl" />
+					<Add option="-lpthread" />
+					<Add option="-lcmn" />
+					<Add option="-L../../build/txj_linux" />
+					<Add option="-Wl,-rpath=." />
+					<Add library="../../libs/libcore.a" />
+					<Add library="../../libs/librtbase.a" />
+					<Add library="../../libs/libvalidator.a" />
+					<Add library="../../libs/libxml.a" />
+					<Add library="../../coresource/libwedo/libwedo.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/storagetest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,14 @@
+
+#ifndef _WEDO_SCOPED_PTR_H_
+#define _WEDO_SCOPED_PTR_H_
+
+// MS compatible compilers support #pragma once
+#if defined(_MSC_VER)
+#    pragma once
+#endif
+
+#include "boost/scoped_ptr.hpp"
+
+namespace wedo {
+	using boost::scoped_ptr;
+};

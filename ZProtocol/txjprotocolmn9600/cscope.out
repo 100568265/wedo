@@ -1,0 +1,1805 @@
+cscope 15 $HOME/wedo/ZProtocol/txjprotocolmn9600               0000010152
+	@/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/include/mn9600.h
+
+1 #iâdeà
+MN9600_H
+
+
+2 
+	#MN9600_H
+
+
+	)
+
+4 #ià
+_MSC_VER
+ > 1000
+
+5 #´agm¨
+Úû
+
+
+8 
+	~"PrÙocÞ.h
+"
+
+9 
+	~"D©aCache.h
+"
+
+10 
+	~"Deviû.h
+"
+
+11 
+	~"Deviûs.h
+"
+
+12 
+	~"sysšifže.h
+"
+
+14 #ifdeà
+PROTOCOL_EXPORTS
+
+
+15 
+	#PROTOCOL_API
+ 
+	`__deþ¥ec
+(
+dÎexpÜt
+)
+
+	)
+
+17 
+	#PROTOCOL_API
+ 
+	`__deþ¥ec
+(
+dÎimpÜt
+)
+
+	)
+
+20 #ifdeà
+__ýlu¥lus
+
+
+24 
+usšg
+ 
+Çme¥aû
+ 
+¡d
+;
+
+26 þas 
+	cmn9600
+ : 
+public
+ 
+PrÙocÞ
+
+
+28 
+public
+:
+
+29 
+mn9600
+();
+
+30 
+vœtu®
+ ~
+mn9600
+();
+
+31 
+In™
+();
+
+32 
+Unš™
+();
+
+34 
+OnR—d
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+& 
+»aded
+);
+
+35 
+ST_BOOLEAN
+ 
+OnS’d
+();
+
+36 
+ST_BOOLEAN
+ 
+OnProûss
+(
+ST_BYTE
+* 
+pbuf
+,
+ST_INT
+ 
+Ën
+);
+
+37 
+ST_BOOLEAN
+ 
+IsSuµÜtEngše
+ (
+ST_INT
+ IsSupportEngine);
+
+41 
+ST_BYTE
+ 
+R—dIndex
+;
+
+42 
+ST_BYTE
+ 
+£ndbuf
+[256];
+
+44 
+public
+:
+
+45 
+ST_BOOLEAN
+ 
+m_bTask
+;
+
+46 
+PrÙocÞTask
+ 
+m_curTask
+;
+
+47 
+ST_INT
+ 
+m_cu¼—dIndex
+;
+
+48 
+ST_INT
+ 
+m_»adIndex
+;
+
+50 
+S’dYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+);
+
+51 
+CÚfœmYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+);
+
+52 
+CªûlYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+);
+
+54 
+R—dD©a1
+();
+
+55 
+R—dD©a2
+();
+
+56 
+R—dD©a3
+();
+
+57 
+R—dD©a4
+();
+
+59 
+EX·šYx
+(
+ST_BYTE
+* 
+pbuf
+);
+
+60 
+EX·šYc
+(
+ST_BYTE
+* 
+pbuf
+);
+
+61 
+EX·šEq
+(
+ST_BYTE
+* 
+pbuf
+);
+
+62 
+EX·šSOE
+(
+ST_BYTE
+* 
+pbuf
+);
+
+65 
+´Ùeùed
+:
+
+67 
+´iv©e
+:
+
+70 #ifdeà
+_WIN32
+
+
+71 
+PROTOCOL_API
+ 
+mn9600
+* 
+C»©eIn¡aû
+();
+
+73 
+mn9600
+* 
+C»©eIn¡aû
+();
+
+76 #ifdeà
+__ýlu¥lus
+
+
+	@/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/main.cpp
+
+15 
+Sam¶eAddIÁ
+(
+i1
+, 
+i2
+)
+
+17  
+i1
+ + 
+i2
+;
+
+21 
+Sam¶eFunùiÚ1
+()
+
+27 
+Sam¶eFunùiÚ2
+()
+
+	@/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/src/mn9600.cpp
+
+1 
+	~"mn9600.h
+"
+
+2 
+	~"Deviû.h
+"
+
+3 
+	~"ChªÃl.h
+"
+
+5 #ifdeà
+_DEBUG
+
+
+6 #undeà
+THIS_FILE
+
+
+7 
+	gTHIS_FILE
+[]=
+__FILE__
+;
+
+8 
+	#Ãw
+ 
+DEBUG_NEW
+
+
+	)
+
+11 
+mn9600
+ * 
+	$C»©eIn¡aû
+()
+
+13  
+Ãw
+ 
+	`mn9600
+();
+
+14 
+	}
+}
+
+16 
+	gmn9600
+::
+	$mn9600
+()
+
+18 
+m_»adIndex
+ = 0;
+
+20 
+	}
+}
+
+22 
+	gmn9600
+::~
+	$mn9600
+()
+
+25 
+	}
+}
+
+27 
+mn9600
+::
+	$In™
+()
+
+28 {
+	}
+}
+
+30 
+mn9600
+::
+	$Unš™
+()
+
+31 {
+	}
+}
+
+33 
+ST_BOOLEAN
+ 
+mn9600
+::
+	$IsSuµÜtEngše
+ (
+ST_INT
+ 
+IsSuµÜtEngše
+)
+
+35  
+Œue
+;
+
+36 
+	}
+}
+
+38 
+	gmn9600
+::
+	$OnR—d
+(
+ST_BYTE
+* 
+pbuf
+,& 
+»aded
+)
+
+40 
+»aded
+ = 0;
+
+41 if(! 
+this
+->
+	`G‘CurPÜt
+())
+
+44 
+lšeIÁ”v®
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘ChªÃl
+()->
+	`G‘ChªÃlInfo
+()->
+ChªÃlIÁ”v®
+;
+
+45 ià(
+lšeIÁ”v®
+ < 3000)
+
+46 
+lšeIÁ”v®
+ = 3000;
+
+48 
+Ën
+ = 
+this
+->
+	`G‘CurPÜt
+()->
+	`PickBy‹s
+(
+pbuf
+, 4, 
+lšeIÁ”v®
+);
+
+50 if(
+Ën
+ >= 4)
+
+52 
+¡¬
+ = 0;
+
+53 ; 
+¡¬
+ < 
+Ën
+; ++star)
+
+55 if(
+pbuf
+[
+¡¬
+] =ð((
+ušt16_t
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+)>>5)
+
+58 if(
+¡¬
+ > 0)
+
+61 
+this
+->
+	`G‘CurPÜt
+()->
+	`R—dBy‹s
+(
+pbuf
+, 
+¡¬
+);
+
+63 if(
+Ën
+ =ð
+¡¬
+)
+
+66 
+	`ShowMes§ge
+ ("Garbled code, clear buffer.");
+
+67 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+71 
+Ën
+ = 
+this
+->
+	`G‘CurPÜt
+()->
+	`PickBy‹s
+(
+pbuf
+, 4, 
+lšeIÁ”v®
+);
+
+80 
+	`ShowMes§ge
+ ("Insufficient data†ength.");
+
+81 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+83 
+	}
+}
+
+85 
+ST_BOOLEAN
+ 
+	gmn9600
+::
+	$OnS’d
+()
+
+87 ià(
+this
+->
+	`G‘CurPÜt
+())
+
+88 
+this
+->
+	`G‘CurPÜt
+()->
+	`CË¬
+();
+
+90 
+m_bTask
+ = 
+çl£
+;
+
+91 if(
+this
+->
+	`HasTask
+(è&&his->
+	`G‘Task
+(&
+m_curTask
+))
+
+93 if(!
+	`¡rcmp
+(
+m_curTask
+.
+skCmd
+,"devicecontrol"))
+
+95 if(
+m_curTask
+.
+skCmdCode
+ == 0)
+
+96 
+	`S’dYK
+(
+m_curTask
+.
+skV®ue
+);
+
+97 if(
+m_curTask
+.
+skCmdCode
+ == 1)
+
+98 
+	`CÚfœmYK
+(
+m_curTask
+.
+skV®ue
+);
+
+99 if(
+m_curTask
+.
+skCmdCode
+ == 2)
+
+100 
+	`CªûlYK
+(
+m_curTask
+.
+skV®ue
+);
+
+103 
+m_curTask
+.
+skResuÉ
+.
+»suÉCode
+ = 0;
+
+104 
+m_curTask
+.
+isT¿nsãr
+ = 1;
+
+105 
+	`T¿nsãr
+(&
+m_curTask
+);
+
+106 
+	`mem£t
+(&
+m_curTask
+,0,(m_curTask));
+
+107  
+çl£
+;
+
+109 
+m_bTask
+ = 
+Œue
+;
+
+111  
+Œue
+;
+
+114 cÚ¡ 
+DeviûInfo
+* 
+šfo
+ = 
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+();
+
+115 if(
+šfo
+ && info->
+D©aA»asCouÁ
+ > 0)
+
+117 ià(
+m_»adIndex
+ >ð
+šfo
+->
+D©aA»asCouÁ
+)
+
+118 
+m_»adIndex
+ = 0;
+
+119 
+m_cu¼—dIndex
+ = 
+m_»adIndex
+++;
+
+120 if(
+m_cu¼—dIndex
+<20)
+
+122 
+	`R—dD©a1
+();
+
+124 if(
+m_cu¼—dIndex
+<22)
+
+126 
+	`R—dD©a2
+();
+
+128 if(
+m_cu¼—dIndex
+<37)
+
+130 
+	`R—dD©a3
+();
+
+133 
+	`R—dD©a4
+();
+
+135  
+Œue
+;
+
+136 
+	}
+}
+
+138 
+boÞ
+ 
+	gmn9600
+::
+	$OnProûss
+(
+ST_BYTE
+* 
+pbuf
+, 
+Ën
+)
+
+140 if(
+pbuf
+[3] == 0x59)
+
+141 {
+	`EX·šYx
+(
+pbuf
+);}
+
+142 if(
+pbuf
+[3] == 0x56)
+
+143 {
+	`EX·šYc
+(
+pbuf
+);}
+
+144 if(
+pbuf
+[3] == 0x58)
+
+145 {
+	`EX·šEq
+(
+pbuf
+);}
+
+146  
+Œue
+;
+
+147 
+	}
+}
+
+151 
+	gmn9600
+::
+	$S’dYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+)
+
+153 
+ST_BYTE
+ 
+£ndbuf
+[32] = {0};
+
+154 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+155 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 || 5;
+
+156 
+£ndbuf
+[2] = 0x08;
+
+157 
+£ndbuf
+[3] = 0x5A;
+
+158 
+£ndbuf
+[4] = 0x08;
+
+159 
+£ndbuf
+[5] = 0x01;
+
+160 
+£ndbuf
+[6] = (
+bIsOn
+ ? 0xCC: 0x33);
+
+161 
+£ndbuf
+[7] = 0x00;
+
+162 
+£ndbuf
+[8] = 0x00;
+
+163 
+£ndbuf
+[9] = 0x00;
+
+164 
+£ndbuf
+[10] = 0x00;
+
+165 
+this
+->
+	`S’d
+(
+£ndbuf
+,11);
+
+166 
+	}
+}
+
+168 
+	gmn9600
+::
+	$CÚfœmYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+)
+
+170 
+ST_BYTE
+ 
+£ndbuf
+[32] = {0};
+
+171 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+172 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 || 5;
+
+173 
+£ndbuf
+[2] = 0x08;
+
+174 
+£ndbuf
+[3] = 0x5B;
+
+175 
+£ndbuf
+[4] = 0x08;
+
+176 
+£ndbuf
+[5] = 0x01;
+
+177 
+£ndbuf
+[6] = (
+bIsOn
+ ? 0xCC: 0x33);
+
+178 
+£ndbuf
+[7] = 0x00;
+
+179 
+£ndbuf
+[8] = 0x00;
+
+180 
+£ndbuf
+[9] = 0x00;
+
+181 
+£ndbuf
+[10] = 0x00;
+
+182 
+this
+->
+	`S’d
+(
+£ndbuf
+,11);
+
+183 
+	}
+}
+
+185 
+	gmn9600
+::
+	$CªûlYK
+(
+ST_BOOLEAN
+ 
+bIsOn
+)
+
+187 
+ST_BYTE
+ 
+£ndbuf
+[32] = {0};
+
+188 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+189 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 || 5;
+
+190 
+£ndbuf
+[2] = 0x08;
+
+191 
+£ndbuf
+[3] = 0x5C;
+
+192 
+£ndbuf
+[4] = 0x01;
+
+193 
+£ndbuf
+[5] = (
+bIsOn
+ ? 0xCC: 0x33);
+
+194 
+this
+->
+	`S’d
+(
+£ndbuf
+,11);
+
+195 
+	}
+}
+
+198 
+	gmn9600
+::
+	$R—dD©a1
+()
+
+200 
+ST_BYTE
+ 
+£ndbuf
+[4];
+
+201 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+202 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 | 5;
+
+203 
+£ndbuf
+[2] = 0x01;
+
+204 
+£ndbuf
+[3] = 0x56;
+
+205 
+this
+->
+	`S’d
+(
+£ndbuf
+,4);
+
+206 
+	}
+}
+
+208 
+	gmn9600
+::
+	$R—dD©a2
+()
+
+210 
+ST_BYTE
+ 
+£ndbuf
+[4];
+
+211 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+212 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 | 5;
+
+213 
+£ndbuf
+[2] = 0x02;
+
+214 
+£ndbuf
+[3] = 0x58;
+
+215 
+this
+->
+	`S’d
+(
+£ndbuf
+,4);
+
+216 
+	}
+}
+
+218 
+	gmn9600
+::
+	$R—dD©a3
+()
+
+220 
+ST_BYTE
+ 
+£ndbuf
+[4];
+
+221 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+222 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 | 5;
+
+223 
+£ndbuf
+[2] = 0x01;
+
+224 
+£ndbuf
+[3] = 0x59;
+
+225 
+this
+->
+	`S’d
+(
+£ndbuf
+,4);
+
+226 
+	}
+}
+
+228 
+	gmn9600
+::
+	$R—dD©a4
+()
+
+230 
+ST_BYTE
+ 
+£ndbuf
+[4];
+
+231 
+£ndbuf
+[0] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) >> 5;
+
+232 
+£ndbuf
+[1] = ((
+ST_BYTE
+)
+this
+->
+	`G‘Deviû
+()->
+	`G‘DeviûInfo
+()->
+Add»ss
+) << 3 | 5;
+
+233 
+£ndbuf
+[2] = 0x02;
+
+234 
+£ndbuf
+[3] = 0x40;
+
+235 
+this
+->
+	`S’d
+(
+£ndbuf
+,4);
+
+236 
+	}
+}
+
+238 
+	gmn9600
+::
+	$EX·šYx
+(
+ST_BYTE
+* 
+pbuf
+)
+
+240 
+ST_BYTE
+ 
+v®ue
+ =0x00;
+
+241 
+i
+ = 0;i<8;i++)
+
+243 
+v®ue
+ = (
+pbuf
+[5]>>
+i
+)&0x01;
+
+244 
+this
+->
+	`Upd©eV®ue
+(22+
+i
+, (
+ST_BYTE
+)
+v®ue
+);
+
+246 
+k
+ = 0;k<4;k++)
+
+248 
+v®ue
+ = (
+pbuf
+[6]>>
+k
+)&0x01;
+
+249 
+this
+->
+	`Upd©eV®ue
+(30+
+k
+, (
+ST_BYTE
+)
+v®ue
+);
+
+251 if(
+pbuf
+[2] == 5)
+
+253 
+j
+ = 2;j<5;j++)
+
+255 
+v®ue
+ = (
+pbuf
+[7]>>
+j
+)&0x01;
+
+256 
+this
+->
+	`Upd©eV®ue
+(33+
+j
+, (
+ST_BYTE
+)
+v®ue
+);
+
+260 
+	}
+}
+
+262 
+	gmn9600
+::
+	$EX·šYc
+(
+ST_BYTE
+* 
+pbuf
+)
+
+264 
+fv®ue
+ [19] = {0};
+
+265 
+fv®ue
+[0] = ()(
+pbuf
+[5] |…buf[6]<<8)*0.01;
+
+266 
+fv®ue
+[1] = ()(
+pbuf
+[7] |…buf[8]<<8)*0.01;
+
+267 
+fv®ue
+[2] = ()(
+pbuf
+[9] |…buf[10]<<8)*0.01;
+
+268 
+fv®ue
+[3] = ()(
+pbuf
+[14] |…buf[15]<<8)*0.01;
+
+269 
+fv®ue
+[4] = ()(
+pbuf
+[16] |…buf[17]<<8)*0.01;
+
+270 
+fv®ue
+[5] = ()(
+pbuf
+[18] |…buf[19]<<8)*0.01;
+
+271 
+fv®ue
+[6] = ()(
+pbuf
+[20] |…buf[21]<<8)*0.01;
+
+272 
+fv®ue
+[7] = ()(
+pbuf
+[25] |…buf[26]<<8)*0.01;
+
+273 
+fv®ue
+[8] = ()(
+pbuf
+[27] |…buf[28]<<8)*0.01;
+
+274 
+fv®ue
+[9] = ()(
+pbuf
+[29] |…buf[30]<<8)*0.01;
+
+275 
+fv®ue
+[10] = ()(
+pbuf
+[31] |…buf[32]<<8)*0.01;
+
+276 
+fv®ue
+[11] = ()(
+pbuf
+[36] |…buf[37]<<8)*0.01;
+
+277 
+fv®ue
+[12] = ()(
+pbuf
+[38] |…buf[39]<<8)*0.01;
+
+278 
+fv®ue
+[13] = ()(
+pbuf
+[40] |…buf[41]<<8)*0.01;
+
+279 
+fv®ue
+[14] = ()(
+pbuf
+[42] |…buf[43]<<8)*0.01;
+
+280 
+fv®ue
+[15] = ()(
+pbuf
+[47] |…buf[48]<<8)*0.01;
+
+281 
+fv®ue
+[16] = ()(
+pbuf
+[49] |…buf[50]<<8)*0.01;
+
+282 
+fv®ue
+[17] = ()(
+pbuf
+[51] |…buf[52]<<8)*0.01;
+
+283 
+fv®ue
+[18] = ()(
+pbuf
+[53] |…buf[54]<<8)*0.01;
+
+284 
+fv®ue
+[19] = ()(
+pbuf
+[58] |…buf[59]<<8)*0.01;
+
+286 
+i
+ = 0;i<20;i++)
+
+288 
+this
+->
+	`Upd©eV®ue
+(
+i
+,(
+fv®ue
+[i]));
+
+292 
+	}
+}
+
+294 
+	gmn9600
+::
+	$EX·šEq
+(
+ST_BYTE
+* 
+pbuf
+)
+
+296 
+fv®ue1
+ = ()(
+pbuf
+[6] |…buf[7]<<8 |…buf[8]<<16)*0.01;
+
+297 
+fv®ue2
+ = ()(
+pbuf
+[9] |…buf[10]<<8 |…buf[11]<<16)*0.01;
+
+298 
+this
+->
+	`Upd©eV®ue
+(20,(
+fv®ue1
+));
+
+299 
+this
+->
+	`Upd©eV®ue
+(21,(
+fv®ue2
+));
+
+300 
+	}
+}
+
+302 
+	gmn9600
+::
+	$EX·šSOE
+(
+ST_BYTE
+* 
+pbuf
+)
+
+304 
+ny—r
+,
+nmÚth
+,
+nday
+,
+nhour
+,
+nmšu‹
+,
+n£cÚd
+,
+nmžl£cÚd
+;
+
+305 
+ny—r
+ = 
+pbuf
+[7]+2000;
+
+306 
+nmÚth
+ = 
+pbuf
+[8];
+
+307 
+nday
+ = 
+pbuf
+[9];
+
+308 
+nhour
+ = 
+pbuf
+[10];
+
+309 
+nmšu‹
+ = 
+pbuf
+[14];
+
+310 
+n£cÚd
+ = 
+pbuf
+[15];
+
+311 
+nmžl£cÚd
+ = 
+pbuf
+[16]+pbuf[17]*256;
+
+312 
+¡ršg
+ 
+ss
+ = "";
+
+313 
+¡ršg
+ 
+Çme
+ = "";
+
+314 
+ss
+.
+FÜm©
+ = ("äº‹ä»¶æ—¶é—´ä¸º%då¹´%dæœˆ%dæ—¥%dæ—¶%dåˆ†%dç§’%dæ¯«ç§’",
+ny—r
+,
+nmÚth
+,
+nday
+,
+nhour
+,
+nmšu‹
+,
+n£cÚd
+,
+nmžl£cÚd
+);
+
+315 
+ST_INT
+ 
+ty³
+ = 
+pbuf
+[6];
+
+316 
+ty³
+)
+
+318 0:
+Çme
+ = "Aç›¸ä¿æŠ¤ç”µæµ";
+
+320 1:
+Çme
+ = "Bç›¸ä¿æŠ¤ç”µæµ";
+
+322 2:
+Çme
+ = "Cç›¸ä¿æŠ¤ç”µæµ";
+
+324 3:
+Çme
+ = "ABçº¿ç”µåŽ‹";
+
+326 4:
+Çme
+ = "BCçº¿ç”µåŽ‹";
+
+328 5:
+Çme
+ = "CAçº¿ç”µåŽ‹";
+
+330 6:
+Çme
+ = "é›¶åºç”µåŽ‹";
+
+332 7:
+Çme
+ = "é›¶åºç”µæµ";
+
+334 8:
+Çme
+ = "è´Ÿåºç”µæµ";
+
+336 9:
+Çme
+ = "é¢‘çŽ‡";
+
+339 
+Çme
+ =‚ame+
+ss
+;
+
+340 
+this
+->
+	`R•ÜtEv’t
+(
+Çme
+,"soebj");
+
+341 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+3
+185
+/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/include/mn9600.h
+/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/main.cpp
+/home/zengrong/wedo/ZProtocol/txjprotocolmn9600/src/mn9600.cpp

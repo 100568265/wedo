@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IP>192.168.0.151</IP>
+  <Port>9999</Port>
+  <Name>9楼308房</Name>	
+</ConfigParam>

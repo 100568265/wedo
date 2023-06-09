@@ -1,0 +1,24 @@
+#ifndef PORTTCPCLIENT_H
+#define PORTTCPCLIENT_H
+
+#include "DataCache.h"
+#include "PortBase.h"
+#include "PortTcp.h"
+
+class PortTcpClient : public PortBase, public PortTcp
+{
+public:
+    PortTcpClient (Channel *channel, PortInfo *portInfo);
+    ~PortTcpClient();
+    ST_VOID					Init  ();
+    ST_VOID					Uninit();
+    ST_VOID					Open  ();
+    ST_VOID					Close ();
+    ST_BOOLEAN				Send  (ST_UINT64 portAddr, ST_BYTE * pBuf, ST_UINT size);
+    ST_VOID					Recv  ();
+protected:
+    ST_SOCKET				client_socket_fd ;
+    struct	sockaddr_in		m_Server_addr;
+};
+
+#endif // PORTTCPCLIENT_H

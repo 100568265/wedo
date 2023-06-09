@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<History Day="20190612">
+    <Data id="1" name="Ia">
+	<Value time="00:05">10</Value>
+	<Value time="00:10">10</Value>
+	<Value time="00:15">10</Value>
+	<Value time="00:20">10</Value>
+	<Value time="00:25">10</Value>
+	<Value time="00:30">10</Value>
+	<Value time="00:35">10</Value>
+	<Value time="00:40">10</Value>
+    </Data>
+    <Data id="2" name="Ib">
+	<Value time="00:05">10</Value>
+	<Value time="00:10">10</Value>
+	<Value time="00:15">10</Value>
+	<Value time="00:20">10</Value>
+	<Value time="00:25">10</Value>
+    </Data>
+    <Data id="3" name="Ic">
+	<Value time="00:05">10</Value>
+	<Value time="00:10">10</Value>
+	<Value time="00:15">10</Value>
+	<Value time="00:20">10</Value>
+	<Value time="00:25">10</Value>
+    </Data>
+    <Data id="4" name="Uab">
+	<Value time="00:05">10</Value>
+	<Value time="00:10">10</Value>
+	<Value time="00:15">10</Value>
+	<Value time="00:20">10</Value>
+    </Data>
+</History>

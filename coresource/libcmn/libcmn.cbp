@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libcmn" />
+		<Option pch_mode="2" />
+		<Option compiler="nuvoton_gnu_gcc_compiler_for_arm" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../build/txj_linux/cmn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../build/txj_linux" />
+				<Option object_output="../../build/txj_linux" />
+				<Option type="3" />
+				<Option compiler="cb4_of_gnu_gcc_compiler" />
+				<Option host_application="cmnTest" />
+				<Option run_host_application_in_terminal="0" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-fPIC" />
+					<Add directory="include" />
+					<Add directory="../libcore/include" />
+					<Add directory="../libxml/include" />
+					<Add directory="../librtbase/include" />
+					<Add directory="../libvalidator/include" />
+					<Add directory="../../includes" />
+					<Add directory="../libwedo" />
+					<Add directory="include/LGMQTT" />
+					<Add directory="include/MQTT" />
+					<Add directory="../../../paho.mqtt.c-1.3.0/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-lrt" />
+					<Add option="-ldl" />
+					<Add option="-lpthread" />
+					<Add library="../libwedo/libwedo.a" />
+					<Add library="../../libs/libxml.a" />
+					<Add library="../../libs/librtbase.a" />
+					<Add library="../../libs/libvalidator.a" />
+					<Add library="../../libs/libcore.a" />
+					<Add library="/usr/lib32/libpaho-mqtt3c.so" />
+					<Add library="/usr/lib32/libpaho-mqtt3a.so" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../../build/txj_linux/libcmn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../build/txj_linux" />
+				<Option object_output="../../build/" />
+				<Option type="3" />
+				<Option compiler="nuvoton_gnu_gcc_compiler_for_arm" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O1" />
+					<Add option="-Wall" />
+					<Add option="-Wno-psabi" />
+					<Add option="-fPIC" />
+					<Add directory="include" />
+					<Add directory="../libcore/include" />
+					<Add directory="../libxml/include" />
+					<Add directory="../librtbase/include" />
+					<Add directory="../../includes" />
+					<Add directory="../libvalidator/include" />
+					<Add directory="include/LGMQTT" />
+				</Compiler>
+				<Linker>
+					<Add option="-lrt" />
+					<Add option="-ldl" />
+					<Add library="../../libs/libcore.a" />
+					<Add library="../../libs/libxml.a" />
+					<Add library="../../libs/librtbase.a" />
+					<Add library="../../libs/libvalidator.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/ActualValueServer.h" />
+		<Unit filename="include/Channel.h" />
+		<Unit filename="include/ChannelConfig.h" />
+		<Unit filename="include/CmnInterface.h" />
+		<Unit filename="include/CmnRtInterface.h" />
+		<Unit filename="include/Communication.h" />
+		<Unit filename="include/DataCache.h" />
+		<Unit filename="include/Device.h" />
+		<Unit filename="include/Devices.h" />
+		<Unit filename="include/Dispatcher.h" />
+		<Unit filename="include/EngineBase.h" />
+		<Unit filename="include/FullingEngine.h" />
+		<Unit filename="include/GlobalCfg.h" />
+		<Unit filename="include/HistoryStorage.h" />
+		<Unit filename="include/LGMQTT/PortMQTTClient.h" />
+		<Unit filename="include/MQTT/PortICBC.h" />
+		<Unit filename="include/MQTTUpload.h" />
+		<Unit filename="include/MonitorClient.h" />
+		<Unit filename="include/MonitorServer.h" />
+		<Unit filename="include/PollingEngine.h" />
+		<Unit filename="include/PortBase.h" />
+		<Unit filename="include/PortBases.h" />
+		<Unit filename="include/PortBuffer.h" />
+		<Unit filename="include/PortCan.h" />
+		<Unit filename="include/PortCom.h" />
+		<Unit filename="include/PortTask.h" />
+		<Unit filename="include/PortTcp.h" />
+		<Unit filename="include/PortTcpClient.h" />
+		<Unit filename="include/PortTcpClientBase.h" />
+		<Unit filename="include/PortTcpServer.h" />
+		<Unit filename="include/PortTcpServerBase.h" />
+		<Unit filename="include/PortUdp.h" />
+		<Unit filename="include/Protocol.h" />
+		<Unit filename="include/ProtocolBase.h" />
+		<Unit filename="include/Timer.h" />
+		<Unit filename="include/TransTable.h" />
+		<Unit filename="include/cJSON.h" />
+		<Unit filename="include/http_server.h" />
+		<Unit filename="include/mongoose.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/ActualValueServer.cpp" />
+		<Unit filename="src/Channel.cpp" />
+		<Unit filename="src/ChannelConfig.cpp" />
+		<Unit filename="src/CmnCommon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/CmnInterface.cpp" />
+		<Unit filename="src/CmnRtInterface.cpp" />
+		<Unit filename="src/Communication.cpp" />
+		<Unit filename="src/DataCache.cpp" />
+		<Unit filename="src/Device.cpp" />
+		<Unit filename="src/Devices.cpp" />
+		<Unit filename="src/Dispatcher.cpp" />
+		<Unit filename="src/EngineBase.cpp" />
+		<Unit filename="src/FullingEngine.cpp" />
+		<Unit filename="src/GlobalCfg.cpp" />
+		<Unit filename="src/HistoryStorage.cpp" />
+		<Unit filename="src/LGMQTT/PortMQTTClient.cpp" />
+		<Unit filename="src/MQTT/PortICBC.cpp" />
+		<Unit filename="src/MQTT/confighandler.cpp" />
+		<Unit filename="src/MQTT/sha1.cpp" />
+		<Unit filename="src/MQTTUpload.cpp" />
+		<Unit filename="src/MonitorClient.cpp" />
+		<Unit filename="src/MonitorServer.cpp" />
+		<Unit filename="src/PollingEngine.cpp" />
+		<Unit filename="src/PortBase.cpp" />
+		<Unit filename="src/PortBases.cpp" />
+		<Unit filename="src/PortBuffer.cpp" />
+		<Unit filename="src/PortCan.cpp" />
+		<Unit filename="src/PortCom.cpp" />
+		<Unit filename="src/PortTask.cpp" />
+		<Unit filename="src/PortTcp.cpp" />
+		<Unit filename="src/PortTcpClient.cpp" />
+		<Unit filename="src/PortTcpClientBase.cpp" />
+		<Unit filename="src/PortTcpServer.cpp" />
+		<Unit filename="src/PortTcpServerBase.cpp" />
+		<Unit filename="src/PortUdp.cpp" />
+		<Unit filename="src/Protocol.cpp" />
+		<Unit filename="src/ProtocolBase.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Unit filename="src/TransTable.cpp" />
+		<Unit filename="src/cJSON.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/http_server.cpp" />
+		<Extensions>
+			<debugger>
+				<search_path add="/home/zengrong/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03/bin" />
+				<remote_debugging target="Debug">
+					<options conn_type="0" ip_address="192.168.124.178" ip_port="2345" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

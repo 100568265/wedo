@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1651826127 source:/home/zengrong/wedo/ZProtocol/txjprotocol0506/main.cpp
+
+1652056902 source:/home/zengrong/wedo/ZProtocol/txjprotocol0506/src/cmodbus.cpp
+	"cmodbus.h"
+
+1652056902 /home/zengrong/wedo/ZProtocol/txjprotocol0506/include/cmodbus.h
+

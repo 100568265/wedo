@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1678954839 source:/root/wedo/ZProtocol/storagetest/main.cpp
+	<iostream>
+	<fstream>
+	<ctime>
+	<unistd.h>
+	<chrono>
+	<cstring>
+	<iomanip>
+

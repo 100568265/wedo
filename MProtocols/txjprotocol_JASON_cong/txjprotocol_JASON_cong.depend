@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1557993958 source:/home/work/work/wedo/communication/MProtocols/txjprotocol_JASON_cong/inc_cJson/cJSON.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1557993958 /home/work/work/wedo/communication/MProtocols/txjprotocol_JASON_cong/inc_cJson/cJSON.h
+	<stddef.h>
+
+1578208684 source:/home/work/work/wedo/communication/MProtocols/txjprotocol_JASON_cong/main.cpp
+

@@ -1,0 +1,697 @@
+C104	include\C104.h	/^class C104 : public Protocol$/;"	c
+C104_H	include\C104.h	2;"	d
+PROTOCOL_API	include\C104.h	11;"	d
+PROTOCOL_API	include\C104.h	13;"	d
+m_bHadYCChange	include\C104.h	/^	bool 	m_bHadYCChange;$/;"	m	class:C104
+m_bHadYXChange	include\C104.h	/^	bool 	m_bHadYXChange;$/;"	m	class:C104
+m_bHasCallAll	include\C104.h	/^	bool 	m_bHasCallAll;$/;"	m	class:C104
+m_bHasCallDD	include\C104.h	/^	bool 	m_bHasCallDD;$/;"	m	class:C104
+m_bHasRun	include\C104.h	/^	bool 	m_bHasRun;$/;"	m	class:C104
+m_byPreValue	include\C104.h	/^	ST_BYTE m_byPreValue[10240];$/;"	m	class:C104
+m_curTask	include\C104.h	/^	ProtocolTask m_curTask;$/;"	m	class:C104
+m_fPreValue	include\C104.h	/^	float	m_fPreValue[16800];$/;"	m	class:C104
+m_nBwYCSendpoint	include\C104.h	/^	int 	m_nBwYCSendpoint;$/;"	m	class:C104
+m_nBwYXSendpoint	include\C104.h	/^	int 	m_nBwYXSendpoint;$/;"	m	class:C104
+m_nCallStep	include\C104.h	/^	int 	m_nCallStep;$/;"	m	class:C104
+m_nDDSendFrameIndex	include\C104.h	/^	int 	m_nDDSendFrameIndex;$/;"	m	class:C104
+m_nReceiveNo	include\C104.h	/^	int 	m_nReceiveNo;$/;"	m	class:C104
+m_nSendIdex	include\C104.h	/^	bool 	m_nSendIdex;$/;"	m	class:C104
+m_nSendNo	include\C104.h	/^	int 	m_nSendNo;$/;"	m	class:C104
+m_nYCSendFrameIndex	include\C104.h	/^	int 	m_nYCSendFrameIndex;$/;"	m	class:C104
+m_nYXSendFrameIndex	include\C104.h	/^	int 	m_nYXSendFrameIndex;$/;"	m	class:C104
+m_obj	include\C104.h	/^	const class IEC104Obj* m_obj;$/;"	m	class:C104	typeref:class:C104::IEC104Obj
+CDebug	include\Debug.h	/^    inline CDebug() : stream(new Stream()) {}$/;"	f	class:CDebug
+CDebug	include\Debug.h	/^    inline CDebug(const CDebug &o) : stream(o.stream) { ++stream->ref; }$/;"	f	class:CDebug
+CDebug	include\Debug.h	/^class CDebug$/;"	c
+CDebugStateKeeper	include\Debug.h	/^CDebugStateKeeper::CDebugStateKeeper(CDebug* d)$/;"	f	class:CDebugStateKeeper
+CDebugStateKeeper	include\Debug.h	/^class CDebugStateKeeper$/;"	c
+CProtocolBase	include\Debug.h	/^typedef ProtocolBase            CProtocolBase;$/;"	t
+FormatFlag	include\Debug.h	/^        enum FormatFlag {$/;"	g	struct:CDebug::Stream
+NAMESPACE_WEDO_BEGIN	include\Debug.h	5;"	d
+NAMESPACE_WEDO_END	include\Debug.h	6;"	d
+NoQuotes	include\Debug.h	/^            NoQuotes = 0x1$/;"	e	enum:CDebug::Stream::FormatFlag
+PROTOCOLTASK	include\Debug.h	/^typedef ProtocolTask            PROTOCOLTASK;$/;"	t
+PROTOCOLTASK_RESULT	include\Debug.h	/^typedef ProtocolTask_Result     PROTOCOLTASK_RESULT;$/;"	t
+Stream	include\Debug.h	/^		Stream() : ref(1), space(true), message_output(true), flags(0) {}$/;"	f	struct:CDebug::Stream
+Stream	include\Debug.h	/^	struct Stream {$/;"	s	class:CDebug
+WEDO_PROTOCOL_ENABLED	include\Debug.h	9;"	d
+_WEDO_DEBUG_H_	include\Debug.h	3;"	d
+byteToHexString	include\Debug.h	/^	static std::string byteToHexString (unsigned char byte)$/;"	f	class:CDebug
+bytesToHexString	include\Debug.h	/^	static std::string bytesToHexString (const unsigned char *bytes, int len)$/;"	f	class:CDebug
+classTemp	include\Debug.h	/^    CDebug* classTemp;$/;"	m	class:CDebugStateKeeper
+flags	include\Debug.h	/^        int flags;$/;"	m	struct:CDebug::Stream
+flagsTemp	include\Debug.h	/^    int  flagsTemp;$/;"	m	class:CDebugStateKeeper
+handler	include\Debug.h	/^	static wedoMsgHandler handler;$/;"	m	class:CDebug
+handler	include\Debug.h	/^	wedoMsgHandler CDebug::handler = 0;$/;"	m	class:CDebug
+handler	include\Debug.h	/^	wedoMsgHandler CDebug::handler = outputToFile;$/;"	m	class:CDebug
+maybeQuote	include\Debug.h	/^    inline CDebug &maybeQuote(char c = '"') { if (!(stream->testFlag(Stream::NoQuotes))) stream->sBuf << c; return *this; }$/;"	f	class:CDebug
+maybeSpace	include\Debug.h	/^    inline CDebug &maybeSpace() { if (stream->space) stream->sBuf << ' '; return *this; }$/;"	f	class:CDebug
+message_output	include\Debug.h	/^        bool message_output;$/;"	m	struct:CDebug::Stream
+noquote	include\Debug.h	/^    inline CDebug &noquote() { stream->setFlag(Stream::NoQuotes); return *this; }$/;"	f	class:CDebug
+nospace	include\Debug.h	/^    inline CDebug &nospace() { stream->space = false; return *this; }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^	inline CDebug &operator<<(const void* t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^	inline CDebug &operator<<(const wchar_t* t) { maybeQuote(); stream->sBuf << t; maybeQuote(); return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^	inline CDebug &operator<<(unsigned char t)$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(bool t) { stream->sBuf << (t ? "true" : "false"); return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(char t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(const char* t) { maybeQuote(); stream->sBuf << t; maybeQuote(); return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(const std::string & t) { maybeQuote(); stream->sBuf << t; maybeQuote(); return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(double t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(float t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(signed int t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(signed long t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(signed short t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(unsigned int t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(unsigned long t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^    inline CDebug &operator<<(unsigned short t) { stream->sBuf << t; return maybeSpace(); }$/;"	f	class:CDebug
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const CChannelBase& cb)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const CLineInfo& lineInfo)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const CProtocolBase& pb)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const ChannelParam& cp)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const DataAreaItem& dai)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const DeviceDataArea& dda)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const LineParams& lp)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const MyProtocolType& mpt)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const PROTOCOLTASK& pt)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const PROTOCOLTASK_RESULT& ptr)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const ST_DUADDR& sd)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const ST_Variable& sv)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const TransformItem& tfi)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const TransformTable& tft)$/;"	f
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const list<T> & l)$/;"	f	namespace:std
+operator <<	include\Debug.h	/^CDebug& operator<< (CDebug& debug, const vector<T> & v)$/;"	f	namespace:std
+operator =	include\Debug.h	/^    inline CDebug& operator= (const CDebug &other) { if(&other == this)return *this; delete stream; stream = other.stream; return *this; }$/;"	f	class:CDebug
+outputToFile	include\Debug.h	/^void outputToFile(const char* buf)$/;"	f
+quote	include\Debug.h	/^    inline CDebug &quote() { stream->unsetFlag(Stream::NoQuotes); return *this; }$/;"	f	class:CDebug
+ref	include\Debug.h	/^        int ref;$/;"	m	struct:CDebug::Stream
+sBuf	include\Debug.h	/^		std::ostringstream sBuf;$/;"	m	struct:CDebug::Stream
+setFlag	include\Debug.h	/^        void setFlag(FormatFlag flag) { flags |= flag; }$/;"	f	struct:CDebug::Stream
+space	include\Debug.h	/^	inline CDebug &space() { stream->space = true; stream->sBuf << ' '; return *this; }$/;"	f	class:CDebug
+space	include\Debug.h	/^        bool space;$/;"	m	struct:CDebug::Stream
+spaceTemp	include\Debug.h	/^    bool spaceTemp;$/;"	m	class:CDebugStateKeeper
+std	include\Debug.h	/^namespace std {$/;"	n
+stream	include\Debug.h	/^    } *stream;$/;"	m	class:CDebug	typeref:struct:CDebug::Stream
+testFlag	include\Debug.h	/^        bool testFlag(FormatFlag flag) const { return ((flags & flag) ? true : false); }$/;"	f	struct:CDebug::Stream
+unsetFlag	include\Debug.h	/^        void unsetFlag(FormatFlag flag) { flags &= ~flag; }$/;"	f	struct:CDebug::Stream
+wedoDebug	include\Debug.h	/^CDebug wedoDebug () { return CDebug(); }$/;"	f
+wedoInstallMsgHandler	include\Debug.h	/^	static wedoMsgHandler wedoInstallMsgHandler(wedoMsgHandler h)$/;"	f	class:CDebug
+wedoMsgHandler	include\Debug.h	/^typedef void (*wedoMsgHandler)(const char*);$/;"	t
+wedo_message_output	include\Debug.h	/^	void wedo_message_output(const char* buf)$/;"	f	class:CDebug
+~CDebug	include\Debug.h	/^	~CDebug () {$/;"	f	class:CDebug
+~CDebugStateKeeper	include\Debug.h	/^CDebugStateKeeper::~CDebugStateKeeper ()$/;"	f	class:CDebugStateKeeper
+CVariant	include\Variant.h	/^	CVariant () {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (ST_DECIMAL val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (ST_VARIANT val) {} $/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (bool val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (const char* val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (double val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (float val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (signed char val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (signed int val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (signed long val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (signed short val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (unsigned char val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (unsigned int val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (unsigned long val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (unsigned short val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^	CVariant (void * val) {}$/;"	f	class:CVariant
+CVariant	include\Variant.h	/^class CVariant {$/;"	c
+Data	include\Variant.h	/^	union Data$/;"	u	class:CVariant
+Type	include\Variant.h	/^	enum Type$/;"	g	class:CVariant
+Type_Binary	include\Variant.h	/^		Type_Binary,$/;"	e	enum:CVariant::Type
+Type_Boolean	include\Variant.h	/^		Type_Boolean,$/;"	e	enum:CVariant::Type
+Type_Byte	include\Variant.h	/^		Type_Byte,$/;"	e	enum:CVariant::Type
+Type_Char	include\Variant.h	/^	    Type_Char,$/;"	e	enum:CVariant::Type
+Type_DateTime	include\Variant.h	/^		Type_DateTime,$/;"	e	enum:CVariant::Type
+Type_Decimal	include\Variant.h	/^		Type_Decimal,$/;"	e	enum:CVariant::Type
+Type_Double	include\Variant.h	/^		Type_Double,$/;"	e	enum:CVariant::Type
+Type_Float	include\Variant.h	/^		Type_Float,$/;"	e	enum:CVariant::Type
+Type_Int16	include\Variant.h	/^		Type_Int16,$/;"	e	enum:CVariant::Type
+Type_Int32	include\Variant.h	/^		Type_Int32,$/;"	e	enum:CVariant::Type
+Type_Int64	include\Variant.h	/^		Type_Int64,$/;"	e	enum:CVariant::Type
+Type_Last	include\Variant.h	/^	    Type_Last$/;"	e	enum:CVariant::Type
+Type_SByte	include\Variant.h	/^		Type_SByte,$/;"	e	enum:CVariant::Type
+Type_String	include\Variant.h	/^		Type_String,$/;"	e	enum:CVariant::Type
+Type_UInt16	include\Variant.h	/^		Type_UInt16,$/;"	e	enum:CVariant::Type
+Type_UInt32	include\Variant.h	/^		Type_UInt32,$/;"	e	enum:CVariant::Type
+Type_UInt64	include\Variant.h	/^		Type_UInt64,$/;"	e	enum:CVariant::Type
+Type_User	include\Variant.h	/^	    Type_User,$/;"	e	enum:CVariant::Type
+_WEDO_VARIANT_H	include\Variant.h	3;"	d
+bVal	include\Variant.h	/^				ST_BYTE  bVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+blVal	include\Variant.h	/^				ST_BOOLEAN blVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+cVal	include\Variant.h	/^				ST_CHAR cVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+dVal	include\Variant.h	/^				ST_DOUBLE dVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+date	include\Variant.h	/^				ST_DOUBLE date;$/;"	m	union:CVariant::Data::__anon42::__anon43
+decVal	include\Variant.h	/^		ST_DECIMAL decVal;$/;"	m	union:CVariant::Data
+dtVal	include\Variant.h	/^				ST_DOUBLE dtVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+fVal	include\Variant.h	/^				ST_FLOAT fVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+iVal	include\Variant.h	/^                ST_INT32 iVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+lVal	include\Variant.h	/^				ST_INT64 lVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+ptrVal	include\Variant.h	/^				void 	*ptrVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+sVal	include\Variant.h	/^				ST_INT16 sVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+strVal	include\Variant.h	/^				ST_CHAR *strVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+uiVal	include\Variant.h	/^				ST_UINT32 uiVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+ulVal	include\Variant.h	/^				ST_UINT64 ulVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+usVal	include\Variant.h	/^				ST_UINT16 usVal;$/;"	m	union:CVariant::Data::__anon42::__anon43
+vtype	include\Variant.h	/^			ST_UINT16 vtype;$/;"	m	struct:CVariant::Data::__anon42
+wReserved1	include\Variant.h	/^			ST_UINT16 wReserved1;$/;"	m	struct:CVariant::Data::__anon42
+wReserved2	include\Variant.h	/^            ST_UINT16 wReserved2;$/;"	m	struct:CVariant::Data::__anon42
+wReserved3	include\Variant.h	/^            ST_UINT16 wReserved3;$/;"	m	struct:CVariant::Data::__anon42
+ACTCONFIRM	include\iec60870_5_104_types.h	/^    ACTCONFIRM 				= 7,	\/\/ 激活确认$/;"	e	enum:_tag_cause_of_transmit
+ACTIVATION	include\iec60870_5_104_types.h	/^    ACTIVATION 				= 6,	\/\/ 激活$/;"	e	enum:_tag_cause_of_transmit
+ACTTERM	include\iec60870_5_104_types.h	/^    ACTTERM 				= 10,	\/\/ 激活终止、激活结束$/;"	e	enum:_tag_cause_of_transmit
+BGSCAN	include\iec60870_5_104_types.h	/^    BGSCAN 					= 2,	\/\/ 背景扫描$/;"	e	enum:_tag_cause_of_transmit
+CP56Time2a	include\iec60870_5_104_types.h	/^struct CP56Time2a {$/;"	s
+CYCLIC	include\iec60870_5_104_types.h	/^	CYCLIC 					= 1,	\/\/ 周期、循环$/;"	e	enum:_tag_cause_of_transmit
+C_BO_NA_1	include\iec60870_5_104_types.h	/^	C_BO_NA_1 = 51,		\/\/ 32比特串$/;"	e	enum:_tag_iec104_type_id
+C_BO_TA_1	include\iec60870_5_104_types.h	/^	C_BO_TA_1 = 64,		\/\/ 带时标CP56Time2a的32比特串$/;"	e	enum:_tag_iec104_type_id
+C_CI_NA_1	include\iec60870_5_104_types.h	/^	C_CI_NA_1 = 101,	\/\/ 电能脉冲召唤命令$/;"	e	enum:_tag_iec104_type_id
+C_CS_NA_1	include\iec60870_5_104_types.h	/^	C_CS_NA_1 = 103,	\/\/ 时钟同步命令$/;"	e	enum:_tag_iec104_type_id
+C_DC_NA_1	include\iec60870_5_104_types.h	/^	C_DC_NA_1 = 46,		\/\/ 双命令$/;"	e	enum:_tag_iec104_type_id
+C_DC_TA_1	include\iec60870_5_104_types.h	/^	C_DC_TA_1 = 59,		\/\/ 带时标CP56Time2a的双命令$/;"	e	enum:_tag_iec104_type_id
+C_IC_NA_1	include\iec60870_5_104_types.h	/^	C_IC_NA_1 = 100,	\/\/ 总召唤命令$/;"	e	enum:_tag_iec104_type_id
+C_RC_NA_1	include\iec60870_5_104_types.h	/^	C_RC_NA_1 = 47,		\/\/ 升降命令$/;"	e	enum:_tag_iec104_type_id
+C_RC_TA_1	include\iec60870_5_104_types.h	/^	C_RC_TA_1 = 60,		\/\/ 带时标CP56Time2a的升降命令$/;"	e	enum:_tag_iec104_type_id
+C_RD_NA_1	include\iec60870_5_104_types.h	/^	C_RD_NA_1 = 102,	\/\/ 读命令$/;"	e	enum:_tag_iec104_type_id
+C_RP_NA_1	include\iec60870_5_104_types.h	/^	C_RP_NA_1 = 105,	\/\/ 复位进程命令$/;"	e	enum:_tag_iec104_type_id
+C_SC_NA_1	include\iec60870_5_104_types.h	/^	C_SC_NA_1 = 45,		\/\/ 单命令$/;"	e	enum:_tag_iec104_type_id
+C_SC_TA_1	include\iec60870_5_104_types.h	/^	C_SC_TA_1 = 58,		\/\/ 带时标CP56Time2a的单命令$/;"	e	enum:_tag_iec104_type_id
+C_SE_NA_1	include\iec60870_5_104_types.h	/^	C_SE_NA_1 = 48,		\/\/ 设点命令，规一化值$/;"	e	enum:_tag_iec104_type_id
+C_SE_NB_1	include\iec60870_5_104_types.h	/^	C_SE_NB_1 = 49,		\/\/ 设点命令，标度化值$/;"	e	enum:_tag_iec104_type_id
+C_SE_NC_1	include\iec60870_5_104_types.h	/^	C_SE_NC_1 = 50,		\/\/ 设点命令，短浮点数$/;"	e	enum:_tag_iec104_type_id
+C_SE_TA_1	include\iec60870_5_104_types.h	/^	C_SE_TA_1 = 61,		\/\/ 带时标CP56Time2a的设点命令，规一化值$/;"	e	enum:_tag_iec104_type_id
+C_SE_TB_1	include\iec60870_5_104_types.h	/^	C_SE_TB_1 = 62,		\/\/ 带时标CP56Time2a的设点命令，标度化值$/;"	e	enum:_tag_iec104_type_id
+C_SE_TC_1	include\iec60870_5_104_types.h	/^	C_SE_TC_1 = 63,		\/\/ 带时标CP56Time2a的设点命令，短浮点数$/;"	e	enum:_tag_iec104_type_id
+C_TS_TA_1	include\iec60870_5_104_types.h	/^	C_TS_TA_1 = 107,	\/\/ 带时标CP56Time2a的测试命令$/;"	e	enum:_tag_iec104_type_id
+CallGroup1	include\iec60870_5_104_types.h	/^		CallGroup1		= 1,	\/\/ 召唤第1组$/;"	e	enum:Iec104QCC::RQT
+CallGroup1	include\iec60870_5_104_types.h	/^	CallGroup1		= 21,	\/\/ 召唤第1组、遥信信息（15H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup10	include\iec60870_5_104_types.h	/^	CallGroup10		= 30,	\/\/ 召唤第10组、遥测信息（1EH）$/;"	e	enum:_tag_iec104_qoi
+CallGroup11	include\iec60870_5_104_types.h	/^	CallGroup11		= 31,	\/\/ 召唤第11组、遥测信息（1FH）$/;"	e	enum:_tag_iec104_qoi
+CallGroup12	include\iec60870_5_104_types.h	/^	CallGroup12		= 32,	\/\/ 召唤第12组、遥测信息（20H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup13	include\iec60870_5_104_types.h	/^	CallGroup13		= 33,	\/\/ 召唤第13组、遥测信息（21H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup14	include\iec60870_5_104_types.h	/^	CallGroup14		= 34,	\/\/ 召唤第14组、遥测信息（22H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup15	include\iec60870_5_104_types.h	/^	CallGroup15		= 35,	\/\/ 召唤第15组、档位信息（23H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup16	include\iec60870_5_104_types.h	/^	CallGroup16		= 36	\/\/ 召唤第16组、远动终端状态信息$/;"	e	enum:_tag_iec104_qoi
+CallGroup2	include\iec60870_5_104_types.h	/^		CallGroup2		= 2,	\/\/ 召唤第2组$/;"	e	enum:Iec104QCC::RQT
+CallGroup2	include\iec60870_5_104_types.h	/^	CallGroup2		= 22,	\/\/ 召唤第2组、遥信信息（16H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup3	include\iec60870_5_104_types.h	/^		CallGroup3		= 3,	\/\/ 召唤第3组$/;"	e	enum:Iec104QCC::RQT
+CallGroup3	include\iec60870_5_104_types.h	/^	CallGroup3		= 23,	\/\/ 召唤第3组、遥信信息（17H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup4	include\iec60870_5_104_types.h	/^		CallGroup4		= 4,	\/\/ 召唤第4组$/;"	e	enum:Iec104QCC::RQT
+CallGroup4	include\iec60870_5_104_types.h	/^	CallGroup4		= 24,	\/\/ 召唤第4组、遥信信息（18H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup5	include\iec60870_5_104_types.h	/^	CallGroup5		= 25,	\/\/ 召唤第5组、遥信信息（19H）$/;"	e	enum:_tag_iec104_qoi
+CallGroup6	include\iec60870_5_104_types.h	/^	CallGroup6		= 26,	\/\/ 召唤第6组、遥信信息（1AH）$/;"	e	enum:_tag_iec104_qoi
+CallGroup7	include\iec60870_5_104_types.h	/^	CallGroup7		= 27,	\/\/ 召唤第7组、遥信信息（1BH）$/;"	e	enum:_tag_iec104_qoi
+CallGroup8	include\iec60870_5_104_types.h	/^	CallGroup8		= 28,	\/\/ 召唤第8组、遥信信息（1CH）$/;"	e	enum:_tag_iec104_qoi
+CallGroup9	include\iec60870_5_104_types.h	/^	CallGroup9		= 29,	\/\/ 召唤第9组、遥测信息（1DH）$/;"	e	enum:_tag_iec104_qoi
+CallGroupAll	include\iec60870_5_104_types.h	/^		CallGroupAll	= 5		\/\/ 总召唤$/;"	e	enum:Iec104QCC::RQT
+CallGroupAll	include\iec60870_5_104_types.h	/^	CallGroupAll	= 20,	\/\/ 站总召唤（14H）， 所有遥信、遥测、档位信息和远东终端状态$/;"	e	enum:_tag_iec104_qoi
+Ctrl2	include\iec60870_5_104_types.h	/^			unsigned char Ctrl2;$/;"	m	struct:iec104_apci::__anon5::__anon6
+DEACTCONFIRM	include\iec60870_5_104_types.h	/^	DEACTCONFIRM			= 9,	\/\/ 停止激活确认$/;"	e	enum:_tag_cause_of_transmit
+DEACTIVATION	include\iec60870_5_104_types.h	/^    DEACTIVATION 			= 8,	\/\/ 停止激活$/;"	e	enum:_tag_cause_of_transmit
+FRZ	include\iec60870_5_104_types.h	/^	enum FRZ {$/;"	g	class:Iec104QCC
+F_AF_NA_1	include\iec60870_5_104_types.h	/^	F_AF_NA_1 = 124,	\/\/ 确认文件，确认节$/;"	e	enum:_tag_iec104_type_id
+F_DR_NA_1	include\iec60870_5_104_types.h	/^	F_DR_NA_1 = 127,	\/\/ 目录$/;"	e	enum:_tag_iec104_type_id
+F_FR_NA_1	include\iec60870_5_104_types.h	/^	F_FR_NA_1 = 120,	\/\/ 文件已准备好$/;"	e	enum:_tag_iec104_type_id
+F_LS_NA_1	include\iec60870_5_104_types.h	/^	F_LS_NA_1 = 123,	\/\/ 最后的节，最后的段$/;"	e	enum:_tag_iec104_type_id
+F_SC_NA_1	include\iec60870_5_104_types.h	/^	F_SC_NA_1 = 122,	\/\/ 召唤目录，选择文件，召唤文件，召唤节$/;"	e	enum:_tag_iec104_type_id
+F_SG_NA_1	include\iec60870_5_104_types.h	/^	F_SG_NA_1 = 125,	\/\/ 段$/;"	e	enum:_tag_iec104_type_id
+F_SR_NA_1	include\iec60870_5_104_types.h	/^	F_SR_NA_1 = 121,	\/\/ 节已准备好$/;"	e	enum:_tag_iec104_type_id
+Freeze	include\iec60870_5_104_types.h	/^		Freeze		= 2,		\/\/ 冻结不复位$/;"	e	enum:Iec104QCC::FRZ
+FrzAndRst	include\iec60870_5_104_types.h	/^		FrzAndRst	= 3,		\/\/ 冻结复位$/;"	e	enum:Iec104QCC::FRZ
+INITIALIZE	include\iec60870_5_104_types.h	/^	INITIALIZE				= 4,	\/\/ 初始化$/;"	e	enum:_tag_cause_of_transmit
+Iec104Cause	include\iec60870_5_104_types.h	/^} Iec104Cause;$/;"	t	typeref:enum:_tag_cause_of_transmit
+Iec104QCC	include\iec60870_5_104_types.h	/^class Iec104QCC {			\/\/ 累计量召唤限定词$/;"	c
+Iec104QOI	include\iec60870_5_104_types.h	/^} Iec104QOI;$/;"	t	typeref:enum:_tag_iec104_qoi
+Iec104TypeId	include\iec60870_5_104_types.h	/^} Iec104TypeId;$/;"	t	typeref:enum:_tag_iec104_type_id
+LOCALBACKMSG	include\iec60870_5_104_types.h	/^	LOCALBACKMSG			= 12,	\/\/ 当地命令引起的返送信息$/;"	e	enum:_tag_cause_of_transmit
+M_BO_NA_1	include\iec60870_5_104_types.h	/^	M_BO_NA_1 = 7,		\/\/ 32比特串$/;"	e	enum:_tag_iec104_type_id
+M_BO_TB_1	include\iec60870_5_104_types.h	/^	M_BO_TB_1 = 33,		\/\/ 带时标CP56Time2a的32比特串$/;"	e	enum:_tag_iec104_type_id
+M_DP_NA_1	include\iec60870_5_104_types.h	/^	M_DP_NA_1 = 3,		\/\/ 双点信息$/;"	e	enum:_tag_iec104_type_id
+M_DP_TA_1	include\iec60870_5_104_types.h	/^	M_DP_TA_1 = 4,		\/\/带时标的双点信息$/;"	e	enum:_tag_iec104_type_id
+M_DP_TB_1	include\iec60870_5_104_types.h	/^	M_DP_TB_1 = 31,		\/\/ 带时标CP56Time2a的双点信息$/;"	e	enum:_tag_iec104_type_id
+M_EI_NA_1	include\iec60870_5_104_types.h	/^	M_EI_NA_1 = 70,		\/\/ 初始化结束$/;"	e	enum:_tag_iec104_type_id
+M_EP_TD_1	include\iec60870_5_104_types.h	/^	M_EP_TD_1 = 38,		\/\/ 带时标CP56Time2a的继电保护装置事件$/;"	e	enum:_tag_iec104_type_id
+M_EP_TE_1	include\iec60870_5_104_types.h	/^	M_EP_TE_1 = 39,		\/\/ 带时标CP56Time2a的继电保护装置成组启动事件$/;"	e	enum:_tag_iec104_type_id
+M_EP_TF_1	include\iec60870_5_104_types.h	/^	M_EP_TF_1 = 40,		\/\/ 带时标CP56Time2a的继电保护装置成组出口信息$/;"	e	enum:_tag_iec104_type_id
+M_IT_NA_1	include\iec60870_5_104_types.h	/^	M_IT_NA_1 = 15,		\/\/ 累计量$/;"	e	enum:_tag_iec104_type_id
+M_IT_TB_1	include\iec60870_5_104_types.h	/^	M_IT_TB_1 = 37,		\/\/ 带时标CP56Time2a的累计量$/;"	e	enum:_tag_iec104_type_id
+M_ME_NA_1	include\iec60870_5_104_types.h	/^	M_ME_NA_1 = 9,		\/\/ 测量值，规一化值$/;"	e	enum:_tag_iec104_type_id
+M_ME_NB_1	include\iec60870_5_104_types.h	/^	M_ME_NB_1 = 11,		\/\/ 测量值，标度化值$/;"	e	enum:_tag_iec104_type_id
+M_ME_NC_1	include\iec60870_5_104_types.h	/^	M_ME_NC_1 = 13,		\/\/ 测量值，短浮点数$/;"	e	enum:_tag_iec104_type_id
+M_ME_ND_1	include\iec60870_5_104_types.h	/^	M_ME_ND_1 = 21,		\/\/ 不带品质描述的规一化测量值$/;"	e	enum:_tag_iec104_type_id
+M_ME_TD_1	include\iec60870_5_104_types.h	/^	M_ME_TD_1 = 34,		\/\/ 带时标CP56Time2a的测量值，规一化值$/;"	e	enum:_tag_iec104_type_id
+M_ME_TE_1	include\iec60870_5_104_types.h	/^	M_ME_TE_1 = 35,		\/\/ 带时标CP56Time2a的测量值，标度化值$/;"	e	enum:_tag_iec104_type_id
+M_ME_TF_1	include\iec60870_5_104_types.h	/^	M_ME_TF_1 = 36,		\/\/ 带时标CP56Time2a的测量值，短浮点数$/;"	e	enum:_tag_iec104_type_id
+M_PS_NA_1	include\iec60870_5_104_types.h	/^	M_PS_NA_1 = 20,		\/\/ 带状态检出的成组单点信息$/;"	e	enum:_tag_iec104_type_id
+M_SP_NA_1	include\iec60870_5_104_types.h	/^	M_SP_NA_1 = 1,  	\/\/ 单点信息$/;"	e	enum:_tag_iec104_type_id
+M_SP_TA_1	include\iec60870_5_104_types.h	/^	M_SP_TA_1 = 2,		\/\/带时标的单点信息$/;"	e	enum:_tag_iec104_type_id
+M_SP_TB_1	include\iec60870_5_104_types.h	/^	M_SP_TB_1 = 30,		\/\/ 带时标CP56Time2a的单点信息$/;"	e	enum:_tag_iec104_type_id
+M_ST_NA_1	include\iec60870_5_104_types.h	/^	M_ST_NA_1 = 5,		\/\/ 步位置信息$/;"	e	enum:_tag_iec104_type_id
+M_ST_TB_1	include\iec60870_5_104_types.h	/^	M_ST_TB_1 = 32,		\/\/ 带时标CP56Time2a的步位置信息$/;"	e	enum:_tag_iec104_type_id
+NR	include\iec60870_5_104_types.h	/^	unsigned short NR;$/;"	m	struct:iec104_apci
+NS	include\iec60870_5_104_types.h	/^		unsigned short NS;$/;"	m	union:iec104_apci::__anon5
+P_AC_NA_1	include\iec60870_5_104_types.h	/^	P_AC_NA_1 = 113,	\/\/ 参数激活$/;"	e	enum:_tag_iec104_type_id
+P_ME_NA_1	include\iec60870_5_104_types.h	/^	P_ME_NA_1 = 110,	\/\/ 测量值参数，规一化值$/;"	e	enum:_tag_iec104_type_id
+P_ME_NB_1	include\iec60870_5_104_types.h	/^	P_ME_NB_1 = 111,	\/\/ 测量值参数，标度化值$/;"	e	enum:_tag_iec104_type_id
+P_ME_NC_1	include\iec60870_5_104_types.h	/^	P_ME_NC_1 = 112,	\/\/ 测量值参数，短浮点数$/;"	e	enum:_tag_iec104_type_id
+REMOTEBACKMSG	include\iec60870_5_104_types.h	/^	REMOTEBACKMSG			= 11,	\/\/ 远方命令引起的返送信息$/;"	e	enum:_tag_cause_of_transmit
+REQUEST	include\iec60870_5_104_types.h	/^    REQUEST 				= 5,	\/\/ 请求或被请求$/;"	e	enum:_tag_cause_of_transmit
+RESPONSEPHCALL1	include\iec60870_5_104_types.h	/^	RESPONSEPHCALL1			= 38,	\/\/ 响应第1组电度量召唤$/;"	e	enum:_tag_cause_of_transmit
+RESPONSEPHCALL2	include\iec60870_5_104_types.h	/^	RESPONSEPHCALL2			= 39,	\/\/ 响应第2组电度量召唤$/;"	e	enum:_tag_cause_of_transmit
+RESPONSEPHCALL3	include\iec60870_5_104_types.h	/^	RESPONSEPHCALL3			= 40,	\/\/ 响应第3组电度量召唤$/;"	e	enum:_tag_cause_of_transmit
+RESPONSEPHCALL4	include\iec60870_5_104_types.h	/^	RESPONSEPHCALL4			= 41,	\/\/ 响应第4组电度量召唤$/;"	e	enum:_tag_cause_of_transmit
+RESPONSEPHCALLS	include\iec60870_5_104_types.h	/^	RESPONSEPHCALLS			= 37,	\/\/ 响应电度量总召唤$/;"	e	enum:_tag_cause_of_transmit
+RESPONSETOTALCALLS	include\iec60870_5_104_types.h	/^	RESPONSETOTALCALLS		= 20,	\/\/ 响应总召唤$/;"	e	enum:_tag_cause_of_transmit
+RQT	include\iec60870_5_104_types.h	/^	enum RQT {$/;"	g	class:Iec104QCC
+Read	include\iec60870_5_104_types.h	/^		Read		= 1,		\/\/ 读$/;"	e	enum:Iec104QCC::FRZ
+Reserve	include\iec60870_5_104_types.h	/^	Reserve$/;"	e	enum:_tag_iec104_type_id
+Reset	include\iec60870_5_104_types.h	/^		Reset		= 4			\/\/ 复位$/;"	e	enum:Iec104QCC::FRZ
+SPONTANEOUS	include\iec60870_5_104_types.h	/^    SPONTANEOUS 			= 3,	\/\/ 自发、突发$/;"	e	enum:_tag_cause_of_transmit
+UNkNOWNCAUSE	include\iec60870_5_104_types.h	/^	UNkNOWNCAUSE			= 45,	\/\/ 未知的传送原因$/;"	e	enum:_tag_cause_of_transmit
+UNkNOWNINFOOBJADDR	include\iec60870_5_104_types.h	/^	UNkNOWNINFOOBJADDR		= 47	\/\/ 未知的信息对象地址$/;"	e	enum:_tag_cause_of_transmit
+UNkNOWNPA	include\iec60870_5_104_types.h	/^	UNkNOWNPA				= 46,	\/\/ 未知的ASDU公共地址$/;"	e	enum:_tag_cause_of_transmit
+UNkNOWNTYPEID	include\iec60870_5_104_types.h	/^	UNkNOWNTYPEID			= 44,	\/\/ 未知的类型标识$/;"	e	enum:_tag_cause_of_transmit
+Undefined	include\iec60870_5_104_types.h	/^	Undefined,			\/\/ 未定义$/;"	e	enum:_tag_iec104_type_id
+Unused	include\iec60870_5_104_types.h	/^	Unused = 1,			\/\/ 未使用$/;"	e	enum:_tag_iec104_qoi
+__IEC_60870_5_104_TYPES_H	include\iec60870_5_104_types.h	3;"	d
+_tag_cause_of_transmit	include\iec60870_5_104_types.h	/^typedef enum _tag_cause_of_transmit {$/;"	g
+_tag_iec104_qoi	include\iec60870_5_104_types.h	/^typedef enum _tag_iec104_qoi {$/;"	g
+_tag_iec104_type_id	include\iec60870_5_104_types.h	/^typedef enum _tag_iec104_type_id {$/;"	g
+apci	include\iec60870_5_104_types.h	/^	struct iec104_apci apci;	\/\/ APCI 应用规约控制信息$/;"	m	struct:iec104_apdu	typeref:struct:iec104_apdu::iec104_apci
+asduh	include\iec60870_5_104_types.h	/^    struct iec104_data_unit_id asduh;$/;"	m	struct:iec104_apdu	typeref:struct:iec104_apdu::iec104_data_unit_id
+bcr	include\iec60870_5_104_types.h	/^    unsigned long int bcr;$/;"	m	struct:iec_type37
+bit1	include\iec60870_5_104_types.h	/^			unsigned char bit1   :1;$/;"	m	struct:iec104_apci::__anon5::__anon6
+bit1_2	include\iec60870_5_104_types.h	/^			unsigned char bit1_2 :2;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit2_8	include\iec60870_5_104_types.h	/^			unsigned char bit2_8 :7;$/;"	m	struct:iec104_apci::__anon5::__anon6
+bit3	include\iec60870_5_104_types.h	/^			unsigned char bit3   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit4	include\iec60870_5_104_types.h	/^			unsigned char bit4   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit5	include\iec60870_5_104_types.h	/^			unsigned char bit5   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit6	include\iec60870_5_104_types.h	/^			unsigned char bit6   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit7	include\iec60870_5_104_types.h	/^			unsigned char bit7   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bit8	include\iec60870_5_104_types.h	/^			unsigned char bit8   :1;$/;"	m	struct:iec104_apci::__anon5::__anon7
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_qualif
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type1
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type11
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type13
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type3
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type30
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type31
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type32
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type33
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type34
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type35
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type36
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type5
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type7
+bl	include\iec60870_5_104_types.h	/^    unsigned char bl  :1; \/\/ blocked\/not blocked$/;"	m	struct:iec_type9
+ca	include\iec60870_5_104_types.h	/^    unsigned char ca :1;$/;"	m	struct:iec_type37
+cause	include\iec60870_5_104_types.h	/^    unsigned char cause :6; \/\/ 传送原因$/;"	m	struct:iec104_data_unit_id
+cd	include\iec60870_5_104_types.h	/^        unsigned short  cd;$/;"	m	union:iec_stcd::__anon3
+cd1	include\iec60870_5_104_types.h	/^            unsigned char cd1  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd10	include\iec60870_5_104_types.h	/^            unsigned char cd10 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd11	include\iec60870_5_104_types.h	/^            unsigned char cd11 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd12	include\iec60870_5_104_types.h	/^            unsigned char cd12 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd13	include\iec60870_5_104_types.h	/^            unsigned char cd13 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd14	include\iec60870_5_104_types.h	/^            unsigned char cd14 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd15	include\iec60870_5_104_types.h	/^            unsigned char cd15 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd16	include\iec60870_5_104_types.h	/^            unsigned char cd16 :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd2	include\iec60870_5_104_types.h	/^            unsigned char cd2  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd3	include\iec60870_5_104_types.h	/^            unsigned char cd3  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd4	include\iec60870_5_104_types.h	/^            unsigned char cd4  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd5	include\iec60870_5_104_types.h	/^            unsigned char cd5  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd6	include\iec60870_5_104_types.h	/^            unsigned char cd6  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd7	include\iec60870_5_104_types.h	/^            unsigned char cd7  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd8	include\iec60870_5_104_types.h	/^            unsigned char cd8  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cd9	include\iec60870_5_104_types.h	/^            unsigned char cd9  :1;$/;"	m	struct:iec_stcd::__anon3::__anon4
+cy	include\iec60870_5_104_types.h	/^    unsigned char cy :1;$/;"	m	struct:iec_type37
+dados	include\iec60870_5_104_types.h	/^        unsigned char dados[243];$/;"	m	union:iec104_apdu::__anon8
+dcs	include\iec60870_5_104_types.h	/^    unsigned char dcs :2; \/\/ double command state$/;"	m	struct:iec_type46
+dcs	include\iec60870_5_104_types.h	/^    unsigned char dcs :2; \/\/ double command state$/;"	m	struct:iec_type59
+dp	include\iec60870_5_104_types.h	/^    unsigned char dp  :2; \/\/ double point information$/;"	m	struct:iec_type31
+dpi	include\iec60870_5_104_types.h	/^    unsigned char dpi :2; \/\/ double point information$/;"	m	struct:iec_type3
+frz	include\iec60870_5_104_types.h	/^    unsigned char frz :2; \/\/ freeze$/;"	m	struct:iec_type101
+hour	include\iec60870_5_104_types.h	/^    unsigned char hour  :5;$/;"	m	struct:CP56Time2a
+iec104_apci	include\iec60870_5_104_types.h	/^struct iec104_apci {$/;"	s
+iec104_apdu	include\iec60870_5_104_types.h	/^struct iec104_apdu {$/;"	s
+iec104_data_unit_id	include\iec60870_5_104_types.h	/^struct iec104_data_unit_id {$/;"	s
+iec_qualif	include\iec60870_5_104_types.h	/^struct iec_qualif$/;"	s
+iec_stcd	include\iec60870_5_104_types.h	/^struct iec_stcd {$/;"	s
+iec_type1	include\iec60870_5_104_types.h	/^struct iec_type1 {$/;"	s
+iec_type100	include\iec60870_5_104_types.h	/^struct iec_type100 {$/;"	s
+iec_type101	include\iec60870_5_104_types.h	/^struct iec_type101 {$/;"	s
+iec_type103	include\iec60870_5_104_types.h	/^struct iec_type103 {$/;"	s
+iec_type107	include\iec60870_5_104_types.h	/^struct iec_type107 {$/;"	s
+iec_type11	include\iec60870_5_104_types.h	/^struct iec_type11 {$/;"	s
+iec_type13	include\iec60870_5_104_types.h	/^struct iec_type13 {$/;"	s
+iec_type3	include\iec60870_5_104_types.h	/^struct iec_type3 {$/;"	s
+iec_type30	include\iec60870_5_104_types.h	/^struct iec_type30 {$/;"	s
+iec_type31	include\iec60870_5_104_types.h	/^struct iec_type31 {$/;"	s
+iec_type32	include\iec60870_5_104_types.h	/^struct iec_type32 {$/;"	s
+iec_type33	include\iec60870_5_104_types.h	/^struct iec_type33 {$/;"	s
+iec_type34	include\iec60870_5_104_types.h	/^struct iec_type34 {$/;"	s
+iec_type35	include\iec60870_5_104_types.h	/^struct iec_type35 {$/;"	s
+iec_type36	include\iec60870_5_104_types.h	/^struct iec_type36 {$/;"	s
+iec_type37	include\iec60870_5_104_types.h	/^struct iec_type37 {$/;"	s
+iec_type45	include\iec60870_5_104_types.h	/^struct iec_type45 {$/;"	s
+iec_type46	include\iec60870_5_104_types.h	/^struct iec_type46 {$/;"	s
+iec_type47	include\iec60870_5_104_types.h	/^struct iec_type47 {$/;"	s
+iec_type5	include\iec60870_5_104_types.h	/^struct iec_type5 {$/;"	s
+iec_type58	include\iec60870_5_104_types.h	/^struct iec_type58 {$/;"	s
+iec_type59	include\iec60870_5_104_types.h	/^struct iec_type59 {$/;"	s
+iec_type60	include\iec60870_5_104_types.h	/^struct iec_type60 {$/;"	s
+iec_type7	include\iec60870_5_104_types.h	/^struct iec_type7 {$/;"	s
+iec_type9	include\iec60870_5_104_types.h	/^struct iec_type9 {$/;"	s
+ioaddr16l	include\iec60870_5_104_types.h	/^			unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon40
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon10
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon11
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon12
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon13
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon14
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon15
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon16
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon17
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon18
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon19
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon20
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon21
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon22
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon23
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon24
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon25
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon26
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon27
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon28
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon29
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon30
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon31
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon32
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon33
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon34
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon35
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon36
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon37
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon38
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon39
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon41
+ioaddr16l	include\iec60870_5_104_types.h	/^            unsigned short ioaddr16l;$/;"	m	struct:iec104_apdu::__anon8::__anon9
+ioaddr8h	include\iec60870_5_104_types.h	/^			unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon40
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon10
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon11
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon12
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon13
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon14
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon15
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon16
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon17
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon18
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon19
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon20
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon21
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon22
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon23
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon24
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon25
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon26
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon27
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon28
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon29
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon30
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon31
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon32
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon33
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon34
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon35
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon36
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon37
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon38
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon39
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon41
+ioaddr8h	include\iec60870_5_104_types.h	/^            unsigned char ioaddr8h;$/;"	m	struct:iec104_apdu::__anon8::__anon9
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv    :1;$/;"	m	struct:CP56Time2a
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_qualif
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type1
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type11
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type13
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type3
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type30
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type31
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type32
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type33
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type34
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type35
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type36
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type5
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type7
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv  :1; \/\/ valid\/invalid$/;"	m	struct:iec_type9
+iv	include\iec60870_5_104_types.h	/^    unsigned char iv :1;$/;"	m	struct:iec_type37
+length	include\iec60870_5_104_types.h	/^	unsigned char length;			\/\/ APDU长度; ASDU的最大长度限制在249以内，因为APDU域的最大长度是253（APDU最大值=255-启动字符-长度域）$/;"	m	struct:iec104_apci
+mday	include\iec60870_5_104_types.h	/^    unsigned char mday  :5;	\/\/ day for month$/;"	m	struct:CP56Time2a
+min	include\iec60870_5_104_types.h	/^    unsigned char min   :6;$/;"	m	struct:CP56Time2a
+month	include\iec60870_5_104_types.h	/^    unsigned char month :4;$/;"	m	struct:CP56Time2a
+msec	include\iec60870_5_104_types.h	/^    unsigned short msec;$/;"	m	struct:CP56Time2a
+mv	include\iec60870_5_104_types.h	/^    float  mv;$/;"	m	struct:iec_type36
+mv	include\iec60870_5_104_types.h	/^    float mv;$/;"	m	struct:iec_type13
+mv	include\iec60870_5_104_types.h	/^    unsigned char mv  :7; \/\/ value$/;"	m	struct:iec_type32
+mv	include\iec60870_5_104_types.h	/^    unsigned char mv  :7; \/\/ value$/;"	m	struct:iec_type5
+mv	include\iec60870_5_104_types.h	/^    unsigned short mv;    \/\/ normalized value$/;"	m	struct:iec_type9
+mv	include\iec60870_5_104_types.h	/^    unsigned short mv;    \/\/ scaled value$/;"	m	struct:iec_type11
+mv	include\iec60870_5_104_types.h	/^    unsigned short mv;    \/\/ scaled value$/;"	m	struct:iec_type34
+mv	include\iec60870_5_104_types.h	/^    unsigned short mv;    \/\/ scaled value$/;"	m	struct:iec_type35
+nsq1	include\iec60870_5_104_types.h	/^        } nsq1[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon10
+nsq100	include\iec60870_5_104_types.h	/^        } nsq100;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon39
+nsq101	include\iec60870_5_104_types.h	/^		} nsq101;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon40
+nsq107	include\iec60870_5_104_types.h	/^        } nsq107;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon41
+nsq11	include\iec60870_5_104_types.h	/^        } nsq11[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon18
+nsq13	include\iec60870_5_104_types.h	/^        } nsq13[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon20
+nsq3	include\iec60870_5_104_types.h	/^        } nsq3[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon12
+nsq30	include\iec60870_5_104_types.h	/^        } nsq30[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon22
+nsq31	include\iec60870_5_104_types.h	/^        } nsq31[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon24
+nsq32	include\iec60870_5_104_types.h	/^        } nsq32[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon26
+nsq34	include\iec60870_5_104_types.h	/^        } nsq34[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon28
+nsq35	include\iec60870_5_104_types.h	/^        } nsq35[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon30
+nsq36	include\iec60870_5_104_types.h	/^        } nsq36[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon32
+nsq45	include\iec60870_5_104_types.h	/^        } nsq45;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon33
+nsq46	include\iec60870_5_104_types.h	/^        } nsq46;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon34
+nsq47	include\iec60870_5_104_types.h	/^        } nsq47;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon35
+nsq5	include\iec60870_5_104_types.h	/^        } nsq5[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon14
+nsq58	include\iec60870_5_104_types.h	/^        } nsq58;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon36
+nsq59	include\iec60870_5_104_types.h	/^        } nsq59;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon37
+nsq60	include\iec60870_5_104_types.h	/^        } nsq60;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon38
+nsq9	include\iec60870_5_104_types.h	/^        } nsq9[1];$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon16
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_qualif
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type1
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type11
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type13
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type3
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type30
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type31
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type32
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type33
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type34
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type35
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type36
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type5
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type7
+nt	include\iec60870_5_104_types.h	/^    unsigned char nt  :1; \/\/ not topical\/topical$/;"	m	struct:iec_type9
+num	include\iec60870_5_104_types.h	/^    unsigned char num :7;	\/\/ 信息对象数目$/;"	m	struct:iec104_data_unit_id
+oaddr	include\iec60870_5_104_types.h	/^    unsigned char oaddr; 	\/\/ 源地址，未使用$/;"	m	struct:iec104_data_unit_id
+obj	include\iec60870_5_104_types.h	/^			iec_type101 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon40
+obj	include\iec60870_5_104_types.h	/^            iec_type1 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon10
+obj	include\iec60870_5_104_types.h	/^            iec_type1 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon9
+obj	include\iec60870_5_104_types.h	/^            iec_type100 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon39
+obj	include\iec60870_5_104_types.h	/^            iec_type107 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon41
+obj	include\iec60870_5_104_types.h	/^            iec_type11 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon18
+obj	include\iec60870_5_104_types.h	/^            iec_type11 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon17
+obj	include\iec60870_5_104_types.h	/^            iec_type13 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon20
+obj	include\iec60870_5_104_types.h	/^            iec_type13 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon19
+obj	include\iec60870_5_104_types.h	/^            iec_type3 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon12
+obj	include\iec60870_5_104_types.h	/^            iec_type3 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon11
+obj	include\iec60870_5_104_types.h	/^            iec_type30 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon22
+obj	include\iec60870_5_104_types.h	/^            iec_type30 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon21
+obj	include\iec60870_5_104_types.h	/^            iec_type31 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon24
+obj	include\iec60870_5_104_types.h	/^            iec_type31 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon23
+obj	include\iec60870_5_104_types.h	/^            iec_type32 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon26
+obj	include\iec60870_5_104_types.h	/^            iec_type32 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon25
+obj	include\iec60870_5_104_types.h	/^            iec_type34 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon28
+obj	include\iec60870_5_104_types.h	/^            iec_type34 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon27
+obj	include\iec60870_5_104_types.h	/^            iec_type35 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon30
+obj	include\iec60870_5_104_types.h	/^            iec_type35 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon29
+obj	include\iec60870_5_104_types.h	/^            iec_type36 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon32
+obj	include\iec60870_5_104_types.h	/^            iec_type36 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon31
+obj	include\iec60870_5_104_types.h	/^            iec_type45 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon33
+obj	include\iec60870_5_104_types.h	/^            iec_type46 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon34
+obj	include\iec60870_5_104_types.h	/^            iec_type47 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon35
+obj	include\iec60870_5_104_types.h	/^            iec_type5 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon14
+obj	include\iec60870_5_104_types.h	/^            iec_type5 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon13
+obj	include\iec60870_5_104_types.h	/^            iec_type58 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon36
+obj	include\iec60870_5_104_types.h	/^            iec_type59 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon37
+obj	include\iec60870_5_104_types.h	/^            iec_type60 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon38
+obj	include\iec60870_5_104_types.h	/^            iec_type9 obj;$/;"	m	struct:iec104_apdu::__anon8::__anon16
+obj	include\iec60870_5_104_types.h	/^            iec_type9 obj[1];$/;"	m	struct:iec104_apdu::__anon8::__anon15
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type11
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type13
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type32
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type33
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type34
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type35
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type36
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type5
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type7
+ov	include\iec60870_5_104_types.h	/^    unsigned char ov  :1; \/\/ overflow\/no overflow$/;"	m	struct:iec_type9
+paddr	include\iec60870_5_104_types.h	/^    unsigned short paddr; \/\/ ASDU 公共地址$/;"	m	struct:iec104_data_unit_id
+pn	include\iec60870_5_104_types.h	/^    unsigned char pn :1; 	\/\/ 否定确认：1，肯定确认：0$/;"	m	struct:iec104_data_unit_id
+qoi	include\iec60870_5_104_types.h	/^    unsigned char qoi; \/\/ pointer of interrogation$/;"	m	struct:iec_type100
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu  :5;$/;"	m	struct:iec_type47
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu  :5;$/;"	m	struct:iec_type58
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu  :5;$/;"	m	struct:iec_type59
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu  :5;$/;"	m	struct:iec_type60
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu :5;$/;"	m	struct:iec_type45
+qu	include\iec60870_5_104_types.h	/^    unsigned char qu :5;$/;"	m	struct:iec_type46
+rcs	include\iec60870_5_104_types.h	/^    unsigned char rcs :2; \/\/ regulating step command$/;"	m	struct:iec_type47
+rcs	include\iec60870_5_104_types.h	/^    unsigned char rcs :2; \/\/ regulating step command$/;"	m	struct:iec_type60
+res	include\iec60870_5_104_types.h	/^    unsigned char res :1; \/\/ must be zero$/;"	m	struct:iec_type45
+res	include\iec60870_5_104_types.h	/^    unsigned char res :1; \/\/ must be zero$/;"	m	struct:iec_type58
+res	include\iec60870_5_104_types.h	/^    unsigned char res :2;$/;"	m	struct:iec_qualif
+res	include\iec60870_5_104_types.h	/^    unsigned char res :2;$/;"	m	struct:iec_type3
+res	include\iec60870_5_104_types.h	/^    unsigned char res :2;$/;"	m	struct:iec_type31
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type1
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type11
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type13
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type30
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type32
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type33
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type34
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type35
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type36
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type5
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type7
+res	include\iec60870_5_104_types.h	/^    unsigned char res :3;$/;"	m	struct:iec_type9
+res1	include\iec60870_5_104_types.h	/^    unsigned char res1  :1;$/;"	m	struct:CP56Time2a
+res2	include\iec60870_5_104_types.h	/^    unsigned char res2  :2;$/;"	m	struct:CP56Time2a
+res3	include\iec60870_5_104_types.h	/^    unsigned char res3  :4;$/;"	m	struct:CP56Time2a
+res4	include\iec60870_5_104_types.h	/^    unsigned char res4  :1;$/;"	m	struct:CP56Time2a
+rqt	include\iec60870_5_104_types.h	/^    unsigned char rqt :6; \/\/ request$/;"	m	struct:iec_type101
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_qualif
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type1
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type11
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type13
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type3
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type30
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type31
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type32
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type33
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type34
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type35
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type36
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type5
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type7
+sb	include\iec60870_5_104_types.h	/^    unsigned char sb  :1; \/\/ substituted\/not substituted$/;"	m	struct:iec_type9
+scs	include\iec60870_5_104_types.h	/^    unsigned char scs :1; \/\/ single command state$/;"	m	struct:iec_type45
+scs	include\iec60870_5_104_types.h	/^    unsigned char scs :1; \/\/ single command state$/;"	m	struct:iec_type58
+se	include\iec60870_5_104_types.h	/^    unsigned char se  :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type47
+se	include\iec60870_5_104_types.h	/^    unsigned char se  :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type58
+se	include\iec60870_5_104_types.h	/^    unsigned char se  :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type59
+se	include\iec60870_5_104_types.h	/^    unsigned char se  :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type60
+se	include\iec60870_5_104_types.h	/^    unsigned char se :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type45
+se	include\iec60870_5_104_types.h	/^    unsigned char se :1; \/\/ select=1 \/ execute=0$/;"	m	struct:iec_type46
+spi	include\iec60870_5_104_types.h	/^    unsigned char spi :1; \/\/ single point information$/;"	m	struct:iec_type1
+spi	include\iec60870_5_104_types.h	/^    unsigned char spi :1; \/\/ single point information$/;"	m	struct:iec_type30
+sq	include\iec60870_5_104_types.h	/^    unsigned char sq :1; 	\/\/ 顺序：1，非顺序：0$/;"	m	struct:iec104_data_unit_id
+sq	include\iec60870_5_104_types.h	/^    unsigned char sq :5;$/;"	m	struct:iec_type37
+sq1	include\iec60870_5_104_types.h	/^        } sq1;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon9
+sq11	include\iec60870_5_104_types.h	/^        } sq11;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon17
+sq13	include\iec60870_5_104_types.h	/^        } sq13;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon19
+sq3	include\iec60870_5_104_types.h	/^        } sq3;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon11
+sq30	include\iec60870_5_104_types.h	/^        } sq30;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon21
+sq31	include\iec60870_5_104_types.h	/^        } sq31;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon23
+sq32	include\iec60870_5_104_types.h	/^        } sq32;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon25
+sq34	include\iec60870_5_104_types.h	/^        } sq34;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon27
+sq35	include\iec60870_5_104_types.h	/^        } sq35;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon29
+sq36	include\iec60870_5_104_types.h	/^        } sq36;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon31
+sq5	include\iec60870_5_104_types.h	/^        } sq5;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon13
+sq9	include\iec60870_5_104_types.h	/^        } sq9;$/;"	m	union:iec104_apdu::__anon8	typeref:struct:iec104_apdu::__anon8::__anon15
+st	include\iec60870_5_104_types.h	/^        unsigned short  st;$/;"	m	union:iec_stcd::__anon1
+st1	include\iec60870_5_104_types.h	/^            unsigned char st1  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st10	include\iec60870_5_104_types.h	/^            unsigned char st10 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st11	include\iec60870_5_104_types.h	/^            unsigned char st11 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st12	include\iec60870_5_104_types.h	/^            unsigned char st12 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st13	include\iec60870_5_104_types.h	/^            unsigned char st13 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st14	include\iec60870_5_104_types.h	/^            unsigned char st14 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st15	include\iec60870_5_104_types.h	/^            unsigned char st15 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st16	include\iec60870_5_104_types.h	/^            unsigned char st16 :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st2	include\iec60870_5_104_types.h	/^            unsigned char st2  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st3	include\iec60870_5_104_types.h	/^            unsigned char st3  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st4	include\iec60870_5_104_types.h	/^            unsigned char st4  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st5	include\iec60870_5_104_types.h	/^            unsigned char st5  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st6	include\iec60870_5_104_types.h	/^            unsigned char st6  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st7	include\iec60870_5_104_types.h	/^            unsigned char st7  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st8	include\iec60870_5_104_types.h	/^            unsigned char st8  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+st9	include\iec60870_5_104_types.h	/^            unsigned char st9  :1;$/;"	m	struct:iec_stcd::__anon1::__anon2
+startChr	include\iec60870_5_104_types.h	/^	unsigned char startChr;			\/\/ 启动字符$/;"	m	struct:iec104_apci
+stcd	include\iec60870_5_104_types.h	/^    struct iec_stcd stcd;$/;"	m	struct:iec_type33	typeref:struct:iec_type33::iec_stcd
+stcd	include\iec60870_5_104_types.h	/^    struct iec_stcd stcd;$/;"	m	struct:iec_type7	typeref:struct:iec_type7::iec_stcd
+su	include\iec60870_5_104_types.h	/^    unsigned char su    :1;$/;"	m	struct:CP56Time2a
+t	include\iec60870_5_104_types.h	/^    unsigned char t   :1; \/\/ transient flag$/;"	m	struct:iec_type32
+t	include\iec60870_5_104_types.h	/^    unsigned char t   :1; \/\/ transient flag$/;"	m	struct:iec_type5
+t	include\iec60870_5_104_types.h	/^    unsigned char t :1; 	\/\/ 试验：1，未试验：0$/;"	m	struct:iec104_data_unit_id
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type103
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type107
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type30
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type31
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type32
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type33
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type34
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type35
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type36
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type37
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type58
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type59
+ts	include\iec60870_5_104_types.h	/^    CP56Time2a ts;$/;"	m	struct:iec_type60
+tsc	include\iec60870_5_104_types.h	/^    unsigned short tsc; \/\/ TSC test sequence counter$/;"	m	struct:iec_type107
+type	include\iec60870_5_104_types.h	/^    unsigned char type;  	\/\/ 类型标识$/;"	m	struct:iec104_data_unit_id
+var	include\iec60870_5_104_types.h	/^    unsigned char var :2;$/;"	m	struct:iec_qualif
+wday	include\iec60870_5_104_types.h	/^    unsigned char wday  :3; \/\/ day for week$/;"	m	struct:CP56Time2a
+year	include\iec60870_5_104_types.h	/^    unsigned char year  :7;$/;"	m	struct:CP56Time2a
+SampleAddInt	main.cpp	/^    int SampleAddInt(int i1, int i2)$/;"	f
+SampleFunction1	main.cpp	/^    void SampleFunction1()$/;"	f
+SampleFunction2	main.cpp	/^    int SampleFunction2()$/;"	f
+C104	src\C104.cpp	/^C104::C104() : m_obj(new IEC104Obj())$/;"	f	class:C104
+CreateInstace	src\C104.cpp	/^C104* CreateInstace()$/;"	f
+IEC104Obj	src\C104.cpp	/^ 	IEC104Obj() : VS(0), VR(0) {}$/;"	f	class:IEC104Obj
+IEC104Obj	src\C104.cpp	/^class IEC104Obj$/;"	c	file:
+Init	src\C104.cpp	/^void C104::Init ()$/;"	f	class:C104
+IsSupportEngine	src\C104.cpp	/^bool C104::IsSupportEngine (ST_INT engineType)$/;"	f	class:C104
+OnProcess	src\C104.cpp	/^bool C104::OnProcess (ST_BYTE* pbuf,ST_INT len)$/;"	f	class:C104
+OnRead	src\C104.cpp	/^void C104::OnRead (ST_BYTE* pbuf, ST_INT& readed)$/;"	f	class:C104
+OnSend	src\C104.cpp	/^bool C104::OnSend ()$/;"	f	class:C104
+STARTCHR	src\C104.cpp	/^ 	static const unsigned int STARTCHR 		= 0x68;$/;"	m	class:IEC104Obj	file:
+STARTDTACT	src\C104.cpp	/^ 	static const unsigned int STARTDTACT 	= 0x07;$/;"	m	class:IEC104Obj	file:
+STARTDTCON	src\C104.cpp	/^ 	static const unsigned int STARTDTCON 	= 0x0B;$/;"	m	class:IEC104Obj	file:
+STOPDTACT	src\C104.cpp	/^ 	static const unsigned int STOPDTACT 	= 0x13;$/;"	m	class:IEC104Obj	file:
+STOPDTCON	src\C104.cpp	/^ 	static const unsigned int STOPDTCON 	= 0x23;$/;"	m	class:IEC104Obj	file:
+SUPERVISORY	src\C104.cpp	/^ 	static const unsigned int SUPERVISORY 	= 0x01;$/;"	m	class:IEC104Obj	file:
+SendAllYCData	src\C104.cpp	/^void C104::SendAllYCData(void)$/;"	f	class:C104
+SendAllYXData	src\C104.cpp	/^void C104::SendAllYXData(void)$/;"	f	class:C104
+SendBwYC	src\C104.cpp	/^void    C104::SendBwYC(void)$/;"	f	class:C104
+SendBwYX	src\C104.cpp	/^void C104::SendBwYX(void)$/;"	f	class:C104
+SendDDKCall	src\C104.cpp	/^void  C104::SendDDKCall(void)$/;"	f	class:C104
+SendEndCall	src\C104.cpp	/^void C104::SendEndCall(void) \/\/结束总召唤$/;"	f	class:C104
+SendEndDDCall	src\C104.cpp	/^void  C104::SendEndDDCall(void)$/;"	f	class:C104
+SendLinkTestConfirm	src\C104.cpp	/^void C104::SendLinkTestConfirm () \/\/U帧:测试确认报文$/;"	f	class:C104
+SendOKDDCall	src\C104.cpp	/^void C104::SendOKDDCall(void)\/\/返回电度总召确认报文$/;"	f	class:C104
+SendStartConfirm	src\C104.cpp	/^void C104::SendStartConfirm () \/\/U帧:启动确认报文$/;"	f	class:C104
+SendTotalCallConfirm	src\C104.cpp	/^void C104::SendTotalCallConfirm (void) \/\/返回总召确认报文$/;"	f	class:C104
+TESTFRACT	src\C104.cpp	/^ 	static const unsigned int TESTFRACT 	= 0x43;$/;"	m	class:IEC104Obj	file:
+TESTFRCON	src\C104.cpp	/^ 	static const unsigned int TESTFRCON 	= 0x83;$/;"	m	class:IEC104Obj	file:
+Uninit	src\C104.cpp	/^void C104::Uninit()$/;"	f	class:C104
+VR	src\C104.cpp	/^ 	unsigned short VR;$/;"	m	class:IEC104Obj	file:
+VS	src\C104.cpp	/^ 	unsigned short VS;$/;"	m	class:IEC104Obj	file:
+wDebug	src\C104.cpp	7;"	d	file:
+~C104	src\C104.cpp	/^C104::~C104()$/;"	f	class:C104
+~IEC104Obj	src\C104.cpp	/^ 	~IEC104Obj() {}$/;"	f	class:IEC104Obj
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1567132942 source:/home/work/wedo/comm/protocols/txjprotoclConsole/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	"cJSON.h"
+	"CIni.h"
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<stdlib.h>
+	<unistd.h>
+	<iostream>
+	<string>
+	<fstream>
+
+1565752489 /home/work/wedo/comm/protocols/txjprotoclConsole/include/http.h
+
+1566454557 source:/home/work/wedo/comm/protocols/txjprotoclConsole/src/http.cpp
+	"http.h"
+	<stdio.h>
+	<stdlib.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<string.h>
+	<unistd.h>
+
+1557993958 source:/home/work/wedo/comm/protocols/txjprotoclConsole/cJson/cJSON.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1557993958 /home/work/wedo/comm/protocols/txjprotoclConsole/cJson/cJSON.h
+	<stddef.h>
+
+1566453350 /home/work/wedo/comm/protocols/txjprotoclConsole/include/CIni.h
+	<map>
+	<string>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1566453325 source:/home/work/wedo/comm/protocols/txjprotoclConsole/src/CIni.cpp
+	"CIni.h"
+
+1565831220 source:/home/work/wedo/comm/protocols/txjprotoclConsole/src/HttpRequest.cpp
+	"HttpRequest.h"
+
+1565831190 /home/work/wedo/comm/protocols/txjprotoclConsole/include/HttpRequest.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<netdb.h>
+	<stdarg.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+
